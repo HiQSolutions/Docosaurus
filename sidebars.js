@@ -25,7 +25,7 @@ const sidebars = {
       type: 'category',
       label: 'Governance',
       items: ['governance/asset-relationship',
-             'governance/business-management',],
+             'governance/budget-costi-management',],
     },
   ],
 };
