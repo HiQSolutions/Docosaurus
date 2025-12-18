@@ -24,7 +24,8 @@ const sidebars = {
     {
       type: 'category',
       label: 'Governance',
-      items: ['governance/asset-relationship'],
+      items: ['governance/asset-relationship',
+             'governance/business-management],
     },
   ],
 };
