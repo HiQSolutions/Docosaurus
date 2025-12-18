@@ -1,0 +1,51 @@
+# =========================
+# Node / Docusaurus
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================
+# Docusaurus build output
+# =========================
+build/
+.docusaurus/
+.cache/
+
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+!.vscode/extensions.json
+
+# IntelliJ / WebStorm
+.idea/
+
+# =========================
+# Environment / Secrets
+# =========================
+.env
+.env.local
+.env.*.local
+
+# =========================
+# Temporary / backup files
+# =========================
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+
+# =========================
+# Optional: Word / Office temp
+# =========================
+~$*.docx
+~$*.xlsx
+~$*.pptx
