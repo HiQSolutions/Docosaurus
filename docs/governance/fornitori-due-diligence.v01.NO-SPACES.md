@@ -17,11 +17,11 @@ La funzione e' utilizzata in conformita' alle normative di riferimento (es. DORA
 
 ### Consultazione dati - Elenco Fornitori
 
-![](/img/fornitori-due-diligence/consultazione-dati.png)
+![](/img/consultazione-dati.png)
 
 ### Valutazione Fornitore - Indicatori e Calcolo Scoring
 
-![](/img/fornitori-due-diligence/financial-indicators.png)
+![](/img/financial-indicators.png)
 
 ## Attributi Chiave
 
