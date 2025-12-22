@@ -16,11 +16,11 @@ La funzionalità supporta la classificazione strutturata dei report secondo crit
 
 ### Consultazione Tipologie di Documento
 
-![](/img/gestione-report-governance/Consultazionedati.png)
+![](/img/Consultazionedati.png)
 
 ### Editing Tipologia di Documento
 
-![](/img/gestione-report-governance/Editing.png)
+![](/img/Editing.png)
 
 ## Attributi Chiave
 
