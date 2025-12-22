@@ -14,6 +14,7 @@ const sidebars = {
       items: [
         'governance/asset-relationship',
         'governance/budget-costi-management',
+        'governance/le-mie-attivita',
       ],
     },
   ],
