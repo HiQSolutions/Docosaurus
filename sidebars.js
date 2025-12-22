@@ -1,3 +1,4 @@
+'governance/fornitori-due-diligence'
 // @ts-check
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
@@ -15,7 +16,8 @@ const sidebars = {
         'governance/asset-relationship',
         'governance/budget-costi-management',
         'governance/fornitori-critici',
-        'governance/fornitori-due-diligence.v01.NO-SPACES'
+       'governance/fornitori-due-diligence'
+
       ],
     },
   ],
