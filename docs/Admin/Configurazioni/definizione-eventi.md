@@ -22,21 +22,21 @@ Attraverso questa funzionalità è possibile definire le caratteristiche degli e
 
 ### Dashboard BI – Eventi
 
-![](/img/definizione-eventi/definizioneeventi-dashboardbi.png)
+![](/img/definizioneeventi-dashboardbi.png)
 
 ### Consultazione – Definizione Eventi
 
-![](/img/definizione-eventi/Definizioneeventi-consultazione1.png)
+![](/img/Definizioneeventi-consultazione1.png)
 
-![](/img/definizione-eventi/Definizioneeventi-consultazionedati2.png)
+![](/img/Definizioneeventi-consultazionedati2.png)
 
 ### Editing – Definizione Eventi
 
-![](/img/definizione-eventi/Definizioneeventi-editing1.png)
+![](/img/Definizioneeventi-editing1.png)
 
 ### Editing – Eventi Ruoli
 
-![](/img/definizione-eventi/Definizioneeventi-editing2.png)
+![](/img/Definizioneeventi-editing2.png)
 
 ## Attributi Chiave
 
