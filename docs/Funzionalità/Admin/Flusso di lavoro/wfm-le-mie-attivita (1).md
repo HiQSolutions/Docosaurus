@@ -13,9 +13,9 @@ La funzione **Le mie attività** rappresenta il principale strumento operativo a
 Essa consente di:
 - visualizzare tutte le attività e gli step di processo assegnati,
 - monitorarne stato, avanzamento e rispetto delle scadenze,
-- eseguire le azioni operative previste sullo step corrente (creazione, approvazione, condivisione, archiviazione documentale).
+- eseguire le azioni operative previste sullo step corrente, incluse le attività di gestione e revisione documentale.
 
-La funzione è progettata per supportare un presidio efficace dei processi di governance, sicurezza ICT e compliance, garantendo piena tracciabilità operativa.
+La funzione è progettata per supportare un presidio efficace dei processi di governance, sicurezza ICT e compliance, garantendo piena tracciabilità operativa e collaborazione tra gli utenti coinvolti nel workflow.
 
 ## Schermate di riferimento
 
@@ -34,9 +34,9 @@ La funzione è progettata per supportare un presidio efficace dei processi di go
 La sezione di ricerca consente di filtrare dinamicamente le attività assegnate tramite:
 
 - **Descrizione step**  
-  Tipologia di attività operativa (es. Documento da creare, Documento da approvare).
+  Tipologia di attività operativa (es. Documento da creare, Documento da approvare, Documento da condividere, Documento da archiviare).
 - **Stato step**  
-  Stato dello step (Attivo, Concluso).
+  Stato dello step nel workflow (Attivo, Concluso).
 - **Cerca**  
   Campo di ricerca testuale libera.
 
@@ -69,11 +69,9 @@ L’header applicativo include:
 
 ### Indicatori Visivi e Semantica dei Colori
 
-La funzione utilizza una combinazione di **icone, colori e indicatori puntuali** per fornire una lettura immediata dello stato delle attività.
+La funzione utilizza una combinazione di icone e colori per fornire una lettura immediata dello stato delle attività.
 
 #### Colore del Calendario
-
-Il colore dell’icona calendario indica lo stato temporale e operativo dello step:
 
 - **Calendario verde**  
   Step attivo con tempo disponibile prima della scadenza.
@@ -82,23 +80,16 @@ Il colore dell’icona calendario indica lo stato temporale e operativo dello st
 - **Calendario rosso**  
   Step attivo in ritardo rispetto alla data di fine pianificata.
 - **Calendario blu**  
-  Step concluso. Le date effettive risultano valorizzate e lo step non richiede ulteriori azioni.
-
-Questa codifica cromatica è coerente con i valori di stato e con le date presenti nella tabella.
+  Step concluso. Non sono richieste ulteriori azioni operative.
 
 #### Pallini di Stato accanto al Calendario
 
-Accanto all’icona del calendario è presente un indicatore puntuale che segnala lo stato operativo dello step:
-
 - **Pallino verde**  
-  Step attivo e in carico all’utente.
+  Step attivo e attualmente in carico all’utente.
 - **Pallino bianco / trasparente**  
   Step non attivo o già completato.
 
-La combinazione tra colore del calendario e pallino consente di distinguere rapidamente:
-- step attivi,
-- step conclusi,
-- step critici per scadenza.
+La combinazione tra calendario e pallino consente di distinguere rapidamente priorità e stato operativo.
 
 ### Consultazione Attività
 
@@ -110,21 +101,28 @@ La schermata di consultazione consente:
 
 ### Elaborazione Processi
 
-Selezionando una riga dell’elenco, l’utente accede alla sezione **Elaborazione Processi**, che mostra:
+Selezionando un’attività dall’elenco, l’utente accede alla sezione **Elaborazione Processi**, che mostra:
 
 - **Nome processo**
 - **Nr Step**
 - **Descrizione dello step**
 - **Stato step**
 
-Azioni disponibili:
+Sono disponibili le seguenti azioni operative:
 
 - **Prossimo step**  
-  Avanza il workflow allo step successivo.
+  Avanza il workflow allo step successivo, se consentito dallo stato.
 - **Aggiungi documento**  
-  Consente di associare documentazione allo step.
+  Consente di caricare o associare un nuovo documento allo step corrente.
 - **Elabora documenti**  
-  Esegue l’azione prevista dallo step (approvazione, validazione, condivisione).
+  Permette di aprire e consultare il documento associato allo step selezionato.
+
+  Attraverso questa azione l’utente può:
+  - visualizzare il contenuto del documento,
+  - inserire **commenti**,
+  - proporre **revisioni**.
+
+  I commenti e le revisioni inseriti vengono salvati sul documento e risultano **immediatamente disponibili** per tutti gli altri utenti coinvolti nel workflow del documento, favorendo collaborazione, tracciabilità delle osservazioni e allineamento tra i diversi ruoli.
 
 Le azioni disponibili dipendono dallo stato dello step e dal ruolo dell’utente.
 
@@ -135,17 +133,20 @@ Le azioni disponibili dipendono dallo stato dello step e dal ruolo dell’utente
 - Assegnazioni workflow
 - Date pianificate ed effettive
 - Documenti associati agli step
+- Commenti e revisioni inseriti dagli utenti
 
 ### Relazioni
 
 - Collegamento ai processi di governance, sicurezza ICT e compliance
 - Integrazione con la Document Library
+- Condivisione delle revisioni tra gli utenti del workflow
 
 ### Output
 
 - Avanzamento dei processi
 - Aggiornamento dello stato degli step
-- Tracciabilità delle attività svolte
+- Storico di commenti e revisioni sui documenti
+- Tracciabilità completa delle attività svolte
 
 ## Istruzioni sull’Uso della Funzione
 
@@ -153,13 +154,14 @@ Le azioni disponibili dipendono dallo stato dello step e dal ruolo dell’utente
 2. Utilizzare i filtri per individuare le attività rilevanti.
 3. Interpretare stato e priorità tramite colori e indicatori.
 4. Selezionare l’attività da elaborare.
-5. Completare le azioni previste dallo step.
-6. Verificare l’aggiornamento dello stato nell’elenco.
+5. Utilizzare **Elabora documenti** per consultare il file e inserire commenti o revisioni.
+6. Avanzare lo step o completare l’attività secondo il workflow.
+7. Verificare l’aggiornamento dello stato nell’elenco.
 
 ## Regole di Calcolo della Funzione
 
 La funzione non applica calcoli automatici.  
-Lo stato e i colori degli indicatori derivano dal confronto tra:
+Lo stato delle attività e degli indicatori visivi deriva dal confronto tra:
 - date pianificate,
 - date effettive,
 - stato dello step nel workflow.
