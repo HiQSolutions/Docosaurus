@@ -16,9 +16,9 @@ Attraverso questa funzionalità è possibile definire le caratteristiche degli e
 
 ### Navigazione – Configurazioni
 
-![](/img/definizione-eventi/configurazioni-alberodinavigazione.png)
+![](/img/configurazioni-alberodinavigazione.png)
 
-![](/img/definizione-eventi/configurazioni-alberodinavigazione1.png)
+![](/img/configurazioni-alberodinavigazione1.png)
 
 ### Dashboard BI – Eventi
 
