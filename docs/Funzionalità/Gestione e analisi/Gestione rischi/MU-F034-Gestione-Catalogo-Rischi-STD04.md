@@ -1,62 +1,118 @@
 ---
-id: mu-f034-gestione-catalogo-rischi
-title: Gestione Catalogo Rischi Evento e Fattori di Rischio (F034)
-sidebar_label: Gestione Catalogo Rischi
+id: roi-analytics-f0032
+title: "ROI Analytics – Esternalizzazioni (F0032)"
+sidebar_label: "ROI Analytics (F0032)"
+description: "Analisi del ROI delle esternalizzazioni ICT tramite dashboard Power BI integrate"
 ---
 
-# Gestione Catalogo Rischi Evento e Fattori di Rischio (F034)
+# ROI Analytics – Esternalizzazioni (F0032)
 
-## Introduzione alla Funzione
-La funzione **Gestione Catalogo Rischi Evento e Fattori di Rischio** consente di amministrare il catalogo centralizzato dei rischi ICT all’interno della piattaforma Sinergia ICT.  
-La funzione supporta le attività di Governance, Risk & Compliance permettendo di censire, consultare e mantenere allineati i **Rischi Evento** e i **Fattori di Rischio**, assicurando coerenza semantica con il data dictionary e tracciabilità nel tempo.
+## Introduzione alla Analytics
+
+La funzionalità **ROI Analytics – Esternalizzazioni (F0032)** consente di analizzare in modo strutturato il ritorno sugli investimenti (ROI) associati ai contratti di esternalizzazione ICT, integrando dati economici, operativi e di rischio.
+
+L’analytics supporta le attività di **governance ICT**, **vendor management** e **resilienza operativa**, permettendo di valutare l’impatto dei fornitori esterni sui livelli di servizio, sui costi e sulla gestione degli incidenti.  
+Le informazioni visualizzate sono derivate dal **Data Repository di Sinergia ICT**, in coerenza con il data map e il data dictionary di piattaforma.
+
+---
 
 ## Schermate di riferimento
-![](/img/gestionecatalogorischieventoefattoririschio-consultazionedati.png)
-![](/img/gestionecatalogorischieventoefattoririschio-consultazionedati2.png)
-![](/img/gestionecatalogorischieventoefattoririschio-editing1.png)
-![](/img/gestionecatalogorischieventoefattoririschio-editing2.png)
 
-## Descrizione della Funzione
-La schermata **Gestione Catalogo Rischi Evento e Fattori di Rischio** segue i pattern UXD standard di Sinergia ICT ed è articolata in sezioni di consultazione e di editing.
+### ROI – Contratti
+![](/img/Roicontratti.png)
 
-La sezione di **ricerca** consente di filtrare il catalogo tramite il campo **Categoria di Rischio**, permettendo di restringere la visualizzazione ai rischi afferenti a specifici domini, quali ad esempio Access Management, Cybersecurity, Continuità Operativa o Conformità. Il campo di ricerca testuale consente inoltre di individuare rapidamente uno specifico rischio o fattore.
+### ROI – Contract Detail
+![](/img/RoiContractDetail.png)
 
-L’**elenco dei Rischi Evento** presenta una tabella strutturata con i seguenti attributi principali:
-- **Categoria Rischio**: classificazione del rischio secondo il modello GRC
-- **Rischio Evento**: descrizione dell’evento di rischio potenziale
-- **Tipo FR FE**: indicazione della tipologia (Rischio Evento)
+### ROI – Funzioni
+![](/img/RoiFunzioni.png)
 
-In modo analogo, l’**elenco dei Fattori di Rischio** espone:
-- **Categoria Rischio**: ambito di riferimento
-- **Fattore Rischio**: causa o elemento che contribuisce al manifestarsi del rischio
-- **Tipo FR FE**: indicazione della tipologia (Fattore di Rischio)
+### ROI – Incidenti
+![](/img/Roiincidenti.png)
 
-La selezione di un record abilita l’accesso alla sezione di **editing**, nella quale è possibile visualizzare e gestire il dettaglio informativo del rischio o del fattore selezionato.  
-I campi principali includono:
-- **Tipo FR FE**: distinzione tra Rischio Evento e Fattore di Rischio
-- **Categoria Rischio**: dominio di appartenenza
-- **Rischio Evento / Fattore Rischio**: descrizione estesa
+---
 
-La sezione di editing consente agli utenti autorizzati di effettuare operazioni CRUD:
-- inserimento di nuovi rischi o fattori
-- modifica delle informazioni esistenti
-- eliminazione di elementi non più applicabili
+## Descrizione delle Analytics
 
-Tutte le operazioni sono coerenti con il modello dati di Sinergia ICT e garantiscono l’allineamento con i processi di valutazione del rischio, gestione degli eventi e analisi di impatto.
+### ROI – Contratti
 
-Dal punto di vista informativo:
-- **Input**: tassonomie di rischio, categorie GRC, definizioni di rischio e fattori
-- **Output**: catalogo rischi evento e fattori di rischio aggiornato
-- **Relazioni**: eventi di rischio, valutazioni di rischio, controlli, processi di continuità operativa e compliance
+Questa schermata fornisce una vista aggregata dei **contratti di esternalizzazione ICT**, consentendo di analizzare la distribuzione dei contratti per:
+- tipologia di asset (applicativo o infrastrutturale);
+- componente critica;
+- tipologia di servizio erogato dal fornitore (*vendor services*).
 
-## Istruzioni sull’Uso
-1. Accedere alla funzione **Gestione Catalogo Rischi Evento e Fattori di Rischio** dal menu applicativo.
-2. Utilizzare i filtri per selezionare la categoria di rischio di interesse.
-3. Consultare l’elenco dei rischi evento o dei fattori di rischio.
-4. Selezionare un record per visualizzarne il dettaglio.
-5. Effettuare operazioni di inserimento, modifica o cancellazione solo se autorizzati.
+I **KPI di sintesi** mostrano:
+- numero totale di contratti attivi;
+- numero di servizi di vendor associati;
+- valore medio dei contratti passivi.
 
-## Regole di Calcolo
-- La classificazione **Tipo FR FE** è determinata in base alla tipologia dell’elemento censito.
-- Le categorie di rischio sono definite secondo il data dictionary GRC della piattaforma.
-- I dati del catalogo sono utilizzati come riferimento per i moduli di valutazione e monitoraggio del rischio.
+I grafici a barre evidenziano la concentrazione del valore contrattuale sui diversi servizi, permettendo di individuare fornitori o ambiti con maggiore impatto economico.
+
+---
+
+### ROI – Contract Detail
+
+La schermata di dettaglio consente un’analisi puntuale dei contratti selezionati.  
+La tabella centrale riporta informazioni quali:
+- identificativo del contratto (*ID_Contract*);
+- vendor associato;
+- asset e componente di riferimento;
+- criticità del contratto;
+- metriche SLA e RTO.
+
+I valori medi (es. *Media di SLA RTO Hours*, *Media di Time Incident in charge*) permettono di confrontare le performance contrattuali rispetto agli obiettivi di resilienza definiti.
+
+---
+
+### ROI – Funzioni
+
+Questa analytics mette in relazione i contratti di esternalizzazione con le **funzioni aziendali** supportate.  
+I grafici mostrano:
+- il numero di funzioni per dominio (Governance, Core Banking, Security, Digital Channels, ecc.);
+- la rilevanza delle funzioni critiche o importanti.
+
+La rete di relazioni consente di visualizzare come i fornitori esterni incidono sui processi di business, supportando valutazioni di priorità e rischio operativo.
+
+---
+
+### ROI – Incidenti
+
+La schermata **ROI Incidenti** analizza l’impatto degli incidenti ICT sui contratti esternalizzati.  
+Sono visualizzati:
+- distribuzione degli incidenti per severità (*GRAVE*, *MOLTO GRAVE*);
+- tempi medi di ripristino (*Average Time to Restart*);
+- *SLA Resolution Time*;
+- *Target RTO*.
+
+Questa vista consente di valutare l’efficacia dei fornitori nella gestione degli incidenti e il rispetto degli SLA contrattuali.
+
+---
+
+## Informazioni associate
+
+### Input dati
+- Contratti di esternalizzazione (ID_Contract, vendor, valore contrattuale)
+- Asset ICT (applicativi e infrastrutturali)
+- Funzioni aziendali
+- Incidenti ICT e metriche SLA/RTO
+
+### Relazioni
+- Contratti ↔ Asset
+- Contratti ↔ Funzioni
+- Contratti ↔ Incidenti
+- Vendor ↔ Servizi
+
+### Output
+- KPI di ROI e performance contrattuale
+- Indicatori di rischio operativo
+- Evidenze a supporto delle decisioni di governance
+
+---
+
+## Istruzioni per l’uso
+
+1. Accedere alla sezione **Esternalizzazioni**.
+2. Selezionare la tab **ROI Analytics**.
+3. Utilizzare i filtri laterali per restringere l’analisi (criticità, asset, vendor service).
+4. Analizzare i KPI di sintesi e approfondire tramite le tabelle di dettaglio.
+5. Utilizzare le diverse schermate per una valutazione completa di costi, performance e rischio.
