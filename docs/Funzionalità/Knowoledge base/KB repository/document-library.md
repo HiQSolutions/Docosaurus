@@ -1,5 +1,5 @@
 ---
-id: document-library-analytics
+id: document-library
 title: Document Library
 sidebar_label: Document Library
 ---
@@ -8,63 +8,98 @@ sidebar_label: Document Library
 
 ## Introduzione alla Funzione
 
-La funzione **Document Library** fornisce una vista analitica centralizzata sui documenti gestiti all’interno della piattaforma SinergIA ICT.
+La funzione **Document Library** consente la consultazione e la gestione centralizzata dei documenti all’interno della piattaforma SinergIA ICT.
 
-La dashboard consente all’utente di:
-- monitorare la disponibilità e la distribuzione dei documenti,
-- analizzare i documenti per area tematica, tipologia e contesto operativo,
-- ottenere una visione immediata a supporto delle attività di governance, controllo e reporting.
-
-L’analisi è progettata per offrire valore informativo immediato, senza richiedere competenze tecniche, attraverso visualizzazioni interattive e facilmente navigabili.
+La funzionalità permette agli utenti di:
+- consultare i documenti disponibili secondo criteri strutturati,
+- ricercare e filtrare i documenti per attributi rilevanti,
+- visualizzare i dettagli del tipo documento,
+- gestire le informazioni documentali a supporto dei processi di governance, rischio e compliance.
 
 ## Schermate di riferimento
 
-Le schermate di riferimento della funzione includono una dashboard Power BI integrata nella piattaforma, composta da grafici, KPI e tabelle interattive che rappresentano lo stato e la distribuzione dei documenti.
+### Albero di navigazione
+![](/img/kbrepository-alberonavigazione.png)
 
-## Descrizione Analytics
+### Consultazione Document Library – Tipi Documento
+![](/img/DocumentLibrary-consultazionedati.png)
 
-La dashboard Power BI è strutturata secondo un layout standard:
+### Consultazione Document Library – Documenti
+![](/img/DocumentLibrary-consultazionedati2.png)
 
-- **In alto**
-  - Titolo della funzione
-  - Eventuali filtri di contesto aggiuntivi
+### Editing Tipo Documento
+![](/img/Documentlibrary-editing.png)
 
-- **Area sinistra**
-  - Filtri interattivi che consentono di restringere il perimetro di analisi (es. tipologia documento, area tematica)
+## Attributi Chiave – Consultazione
 
-- **Area centrale**
-  - Grafici e tabelle che mostrano la distribuzione dei documenti
-  - Analisi per categorie, ambiti o altri attributi rilevanti
+### Filtri di Ricerca – Tipi Documento
+- Interno / Esterno
+- Categoria Documento
+- Nome Tipo Documento
+- Ente Emittente
+- Natura Documento
+- Campo Cerca
 
-- **Area destra**
-  - Indicatori KPI e valori sintetici che riassumono i dati principali
+### Colonne – Elenco Tipi Documento
+- Categoria Documento
+- Interno / Esterno
+- Tipo Documento
+- Nome Tipo Documento
+- Ente Emittente
+- Natura Documento
+- ID Tipo Documento
 
-Le visualizzazioni sono interattive: la selezione di un elemento in un grafico aggiorna dinamicamente le altre componenti della dashboard, consentendo analisi esplorative e approfondimenti mirati.
+### Filtri di Ricerca – Document Library
+- Nome File
+- Campo Cerca
+
+### Colonne – Elenco Documenti
+- Nome File
+- Doc Short Descr
+- Periodo Competenza
+- ID Documento
+- ID Tipo Documento
+- Data Inserimento
+
+## UXD della Funzione
+
+### Header Comune
+Header standard SinergIA ICT con nome funzione, menu, utente e ruolo.
+
+### Pattern di Navigazione
+Navigazione gerarchica tramite albero documentale, elenco tipi documento e documenti associati.
+
+### Editing Tipo Documento
+Visualizzazione e gestione dei dettagli del tipo documento selezionato.
+
+### Azioni Disponibili
+- ➕ Aggiungi
+- ✏️ Modifica
+- 🗑️ Elimina
 
 ## Informazioni Associate alla Funzione
 
 ### Input
-
-- Documenti presenti nella piattaforma
-- Metadati associati (tipologia, area tematica, classificazioni)
-- Informazioni derivate dai processi e dai workflow WFM
+- Tipi documento
+- Documenti
+- Metadati
 
 ### Relazioni
-
-- Integrazione con la Document Library operativa
-- Collegamento ai processi di governance, sicurezza ICT e compliance
-- Utilizzo trasversale nei workflow e nelle attività degli utenti
+- Workflow WFM
+- Processi di governance e compliance
 
 ### Output
-
-- Indicatori di sintesi sul patrimonio documentale
-- Evidenze a supporto delle attività di controllo e reporting
-- Informazioni riutilizzabili per analisi e decisioni operative
+- Consultazione documentale strutturata
+- Standardizzazione dei documenti
 
 ## Istruzioni sull’Uso della Funzione
 
-1. Accedere alla funzione **Document Library** dalla piattaforma SinergIA ICT.
-2. Utilizzare i filtri disponibili per selezionare il perimetro di analisi.
-3. Analizzare i grafici e i KPI per ottenere una visione d’insieme.
-4. Interagire con le visualizzazioni per approfondire specifici ambiti o categorie.
-5. Utilizzare le informazioni ottenute come supporto alle attività operative e decisionali.
+1. Accedere alla Document Library.
+2. Navigare l’albero documentale.
+3. Applicare i filtri.
+4. Selezionare il tipo documento o documento.
+5. Consultare o modificare i dettagli.
+
+## Regole di Calcolo della Funzione
+
+Non sono previste regole di calcolo automatiche.
