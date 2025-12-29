@@ -13,7 +13,7 @@ Supporta le attività di governance, risk management e continuità operativa per
 ## Schermate di riferimento
 ![](/img/Applicazioni-DashboardBI.png)
 ![](/img/Applicazioni-consultazionedati.png)
-![](/img/Applicazioni dettaglioElenco.png)
+![](/img/ApplicazionidettaglioElenco.png)
 ![](/img/Editing-applicazioni.png)
 
 ## Descrizione della Funzione
