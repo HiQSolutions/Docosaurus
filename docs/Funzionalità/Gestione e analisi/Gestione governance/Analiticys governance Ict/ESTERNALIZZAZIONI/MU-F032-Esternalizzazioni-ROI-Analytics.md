@@ -11,13 +11,13 @@ L’analisi è basata sull’integrazione dei dati provenienti dal **Data Reposi
 ## Schermate di riferimento
 
 ### ROI – Contract Detail
-![ROI Contract Detail](img/RoiContractDetail.png)
+![ROI Contract Detail](/img/RoiContractDetail.png)
 
 ### ROI – Contratti
-![ROI Contratti](img/Roicontratti.png)
+![ROI Contratti](/img/Roicontratti.png)
 
 ### ROI – Funzioni
-![ROI Funzioni](img/RoiFunzioni.png)
+![ROI Funzioni](/img/RoiFunzioni.png)
 
 ### ROI – Incidenti
 ![ROI Incidenti](img/Roiincidenti.png)
