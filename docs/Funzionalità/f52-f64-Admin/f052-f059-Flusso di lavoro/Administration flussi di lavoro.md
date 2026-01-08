@@ -43,7 +43,7 @@ La funzione **F052 – Le mie Attività** consente all’utente di consultare e 
 ## Schermate di riferimento
 
 ![](/img/wfmlemieattivita-consultazionedati.png)
-![](/img/wfmlemieattivita-elaborazioneattività.png)
+![](/img/wfmlemieattivita-elaborazioneattivita.png)
 
 ## Descrizione dettagliata
 
@@ -347,4 +347,5 @@ Assicurati che i file siano presenti in:
 static/img/nomefile.png
 
 e che i nomi siano in lowercase senza spazi e senza accenti.
+
 
