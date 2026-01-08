@@ -28,7 +28,7 @@ Attraverso questa funzionalità gli utenti possono:
 ![](/img/DocumentLibrary-consultazionedati2.png)
 
 ### Editing Tipo Documento
-![](/img/Documentlibrary-editing.png)
+![](/img/documentlibrary-editing.png)
 
 ## Descrizione della Funzione
 
