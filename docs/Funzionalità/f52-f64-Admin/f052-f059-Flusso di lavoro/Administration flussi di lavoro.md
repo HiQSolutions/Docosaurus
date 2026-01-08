@@ -334,18 +334,7 @@ Questa configurazione è fondamentale per:
 3. Verifica o modifica ruolo e UO
 4. Salva la variazione (o aggiungi un nuovo utente con **+**)
 
----
 
-## Note operative sulle immagini (Docusaurus)
 
-Tutti i riferimenti sono assoluti:
-
-![](/img/nomefile.png)
-
-Assicurati che i file siano presenti in:
-
-static/img/nomefile.png
-
-e che i nomi siano in lowercase senza spazi e senza accenti.
 
 
