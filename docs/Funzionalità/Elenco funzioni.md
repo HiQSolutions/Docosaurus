@@ -1,95 +1,69 @@
 ---
-id: mu-std2-elenco-funzioni
-title: Elenco Funzioni
-sidebar_label: Elenco Funzioni
+id: elenco-funzioni-sinergia-ict
+title: "Elenco Funzioni – Sinergia ICT"
+sidebar_label: "Elenco Funzioni"
+description: "Elenco gerarchico delle funzioni e delle dashboard analytics di Sinergia ICT, organizzato per macro-tipologia e livelli funzionali."
 ---
 
-# Elenco Funzioni
+## Introduzione
 
-Il presente documento riporta l’elenco strutturato delle funzionalità di SinergIA ICT, organizzate per livelli di navigazione (Livello 1 → Livello 2 → Livello 3 → Livello 4).
-Per ogni funzione di **Livello 4** sono indicati **nome funzione**, **codice funzione** e **tipo funzione**.
+Questo manuale raccoglie l’**elenco delle funzioni della piattaforma Sinergia ICT** in forma gerarchica, raggruppando le voci in due macro-tipologie:
+- **Funzioni** (operatività e gestione)
+- **Analytic** (dashboard e analisi)
 
-## Knowledge Base
+Ogni voce è riportata seguendo il percorso **Livello 1 → Livello 2 → Livello 3 → Livello 4**, includendo **codice funzione e nome**.
 
-### KB Repository
+---
 
-#### Documenti
+## Funzioni
 
-- **Document library (F008)** — Tipo funzione: Funzione
+### F001–F009 – Knowledge Base
 
-#### Data Repository
+#### Acquisizione Dati
+- **Knowledge Base → Acquisizione Dati → F001 – Elaborazione Dati Input** *(Tipo: Elaborazione)*
+- **Knowledge Base → Acquisizione Dati → F002 – Elaborare KPIs e ML** *(Tipo: Elaborazione)*
+- **Knowledge Base → Acquisizione Dati → F003 – Pianificare Elaborazioni Aquisizione Dati** *(Tipo: Elaborazione)*
+- **Knowledge Base → Acquisizione Dati → F004 – Acquisizione Dati CMDB** *(Tipo: Elaborazione)*
 
-- **Data repository (F009)** — Tipo funzione: Funzione
+#### Acquisizione Documenti
+- **Knowledge Base → Acquisizione Documenti → F005 – Elaborare Documenti di Input** *(Tipo: Elaborazione)*
+- **Knowledge Base → Acquisizione Documenti → F006 – Elaborare Scoring Documenti** *(Tipo: Elaborazione)*
+- **Knowledge Base → Acquisizione Documenti → F007 – Pianificare Elaborazioni Acquisizione Documenti** *(Tipo: Elaborazione)*
 
+#### KB Repository
+- **Knowledge Base → KB Repository → Documenti → F008 – Document library** *(Tipo: CRUD)*
+- **Knowledge Base → KB Repository → Data Repository → F009 – Data repository** *(Tipo: CRUD)*
 
-## Gestione e Analisi ICT
+---
 
-### Gestione Governance
+### F010–F047 – Gestione e Analisi ICT
 
-#### Gestione Assets
-
-- **Organizzazione ICT interna (F010)** — Tipo funzione: Funzione
-- **Organizzazione Utente (F011)** — Tipo funzione: Funzione
-- **Processi di Business interni (F012)** — Tipo funzione: Funzione
-- **Servizi dai Fornitori ICT (F013)** — Tipo funzione: Funzione
-- **Servizi ICT agli Utenti (F014)** — Tipo funzione: Funzione
-- **Applicazioni ICT (F015)** — Tipo funzione: Funzione
-- **Infrastrutture ICT (F016)** — Tipo funzione: Funzione
-- **Relazioni Tra Asset ICT (F017)** — Tipo funzione: Funzione
+#### Gestione Governance
+- **Gestione e Analisi ICT → Gestione Governance → Gestione Assets → F010 – Organizzazione ICT interna** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Governance → Gestione Assets → F011 – Organizzazione Assets ICT** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Governance → Gestione Assets → F012 – Relazione tra Servizi e Asset ICT** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Governance → Gestione Assets → F013 – Relazione tra Applicazioni e Servizi ICT** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Governance → Gestione Assets → F014 – Relazione tra Applicazioni e Asset ICT** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Governance → Gestione Assets → F015 – Relazione tra Infrastrutture e Asset ICT** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Governance → Gestione Assets → F016 – Relazione tra Asset ICT** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Governance → Gestione Assets → F017 – Relazione tra Asset ICT** *(Tipo: CRUD)*
 
 #### Gestione Eventi
+- **Gestione e Analisi ICT → Gestione Eventi → Incidenti → F018 – Incidenti** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Eventi → Budget ICT → F019 – Budget ICT** *(Tipo: CRUD)*
 
-- **Incidenti ICT (F018)** — Tipo funzione: Funzione
-- **Budget ICT (F019)** — Tipo funzione: Funzione
-- **Gestione della Domanda ICT (F020)** — Tipo funzione: Funzione
-- **Gestione Progetti ICT (F021)** — Tipo funzione: Funzione
-- **Gestione Rilasci ICT (F022)** — Tipo funzione: Funzione
-- **Gestione Servizi ICT (F023)** — Tipo funzione: Funzione
-- **Monitoraggio Transazioni (F024)** — Tipo funzione: Funzione
-- **Azioni Correttive (F025)** — Tipo funzione: Funzione
+#### Gestione Performance Operativa
+- **Gestione e Analisi ICT → Gestione Performance Operativa → Gestione Progetti ICT → F020 – Gestione progetti ICT** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Performance Operativa → Gestione Servizi ICT → F021 – Gestione servizi ICT** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Performance Operativa → Monitoraggio Transazioni → F024 – Monitoraggio transazioni** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Performance Operativa → Azioni Correttive → F025 – Azioni correttive** *(Tipo: CRUD)*
 
-#### Gestione Fornitori
+#### Gestione Rischi e Vulnerabilità
+- **Gestione e Analisi ICT → Gestione Rischi e Vulnerabilità → Gestione Rischi ICT → F026 – Registro rischi ICT** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Rischi e Vulnerabilità → Valutazione Rischi ICT → F027 – Valutazione rischi ICT** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Rischi e Vulnerabilità → Gap Analysis → F028 – Gap Analysis** *(Tipo: Analisi)*
 
-- **Fornitori e Contratti (F026)** — Tipo funzione: Funzione
-- **Fornitori Critici (F027)** — Tipo funzione: Funzione
-- **Fornitori SLA (F028)** — Tipo funzione: Funzione
-- **Fornitori Due Diligence (F029)** — Tipo funzione: Funzione
-
-#### Analytics Governance ICT
-
-- **Asset (F030)** — Tipo funzione: Analytics
-- **Eventi (F031)** — Tipo funzione: Analytics
-- **Esternalizzazioni DORA (F032)** — Tipo funzione: Analytics
-
-### Gestione Rischi
-
-#### Definizione e Valutazione Rischi e Fattori di Rischio
-
-- **Gestione Catalogo Rischi Evento e Fattori di Rischio (F034)** — Tipo funzione: Funzione
-- **Definizione dei Controlli:  Rischio Evento e Fattori di Rischio (F035)** — Tipo funzione: Funzione
-- **Definizione Asset-Rischio_Evento e Asset_Fattore_Rischio (F036)** — Tipo funzione: Funzione
-- **Proposte di modifiche valutazione di rischio event driven (F037)** — Tipo funzione: Funzione
-- **Valutazione Efficacia Controlli per Rischio Evento e Fattori di Rischio (F038)** — Tipo funzione: Funzione
-- **Valutazione Rischio Evento per Asset (F039)** — Tipo funzione: Funzione
-
-
-## Administration
-
-### Flussi Lavoro
-
-#### Configurazione
-
-- **Aree Tematiche (F055)** — Tipo funzione: Funzione
-- **Documenti di WFM (F056)** — Tipo funzione: Funzione
-- **Processi di WFM (F057)** — Tipo funzione: Funzione
-- **Tipi di Processo (F058)** — Tipo funzione: Funzione
-- **Ruoli e Utenti (F059)** — Tipo funzione: Funzione
-
-### Configurazioni
-
-#### Eventi
-
-- **Definizione Eventi (F060)** — Tipo funzione: Funzione
-- **Sottoscrizione Eventi (F061)** — Tipo funzione: Funzione
-- **Log Eventi (F062)** — Tipo funzione: Funzione
-
+#### Gestione Compliance
+- **Gestione e Analisi ICT → Gestione Compliance → Gestione Normative → F035 – Definizione dei Controlli: Rischio Evento e Fattori di Rischio** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Compliance → Gestione Normative → F036 – Definizione dei Controlli: Best Practice** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Compliance → Gestione Normative → F037 – Definizione dei Controlli:**
