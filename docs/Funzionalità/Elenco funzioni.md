@@ -66,4 +66,40 @@ Ogni voce è riportata seguendo il percorso **Livello 1 → Livello 2 → Livell
 #### Gestione Compliance
 - **Gestione e Analisi ICT → Gestione Compliance → Gestione Normative → F035 – Definizione dei Controlli: Rischio Evento e Fattori di Rischio** *(Tipo: CRUD)*
 - **Gestione e Analisi ICT → Gestione Compliance → Gestione Normative → F036 – Definizione dei Controlli: Best Practice** *(Tipo: CRUD)*
-- **Gestione e Analisi ICT → Gestione Compliance → Gestione Normative → F037 – Definizione dei Controlli:**
+- **Gestione e Analisi ICT → Gestione Compliance → Gestione Normative → F037 – Definizione dei Controlli: Controlli e normative Governance** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Compliance → Gestione Normative → F038 – Definizione Best Practice: Normative Governance** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Compliance → Gestione Normative → F039 – Gestione Normative Governance** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Compliance → Gestione Controlli → F043 – Gestione Controlli Compliance** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Compliance → Gestione Controlli → F044 – Valutazione dei Controlli di Compliance e normative governance** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Compliance → Gestione Controlli → F045 – Visualizzazione Gap Normativi di Compliance e normative governance** *(Tipo: Analisi)*
+- **Gestione e Analisi ICT → Gestione Compliance → Gestione Controlli → F046 – Analytics Compliance ICT** *(Tipo: Analytic)*
+
+#### Analytics e Reporting
+- **Gestione e Analisi ICT → Analytics e Reporting → Analytics → F047 – Analytics ICT** *(Tipo: Analytic)*
+
+---
+
+### F052–F059 – Administration
+
+#### Flusso di lavoro
+- **Administration → Flusso di lavoro → F052 – Le mie Attività** *(Tipo: Funzione)*
+- **Administration → Flusso di lavoro → F053 – Archivio Documentale** *(Tipo: Funzione)*
+- **Administration → Flusso di lavoro → F054 – Monitoraggio Processi** *(Tipo: Funzione)*
+- **Administration → Flusso di lavoro → F055 – Configurazione aree tematiche** *(Tipo: Funzione)*
+- **Administration → Flusso di lavoro → F056 – Configurazione documenti** *(Tipo: Funzione)*
+- **Administration → Flusso di lavoro → F057 – Configurazione processi** *(Tipo: Funzione)*
+- **Administration → Flusso di lavoro → F058 – Configurazione tipo processi** *(Tipo: Funzione)*
+- **Administration → Flusso di lavoro → F059 – Configurazione ruoli utenti** *(Tipo: Funzione)*
+
+---
+
+## Analytic
+
+### F060–F064 – Analytics
+
+#### Dashboard
+- **Analytics → Dashboard → F060 – Analytics Performance e Gestione Operativa** *(Tipo: Analytic)*
+- **Analytics → Dashboard → F061 – Analytics Rischi, Sicurezza e Vulnerabilità** *(Tipo: Analytic)*
+- **Analytics → Dashboard → F062 – Analytics Compliance, Audit e Governance** *(Tipo: Analytic)*
+- **Analytics → Dashboard → F063 – Analytics Normativa e Compliance** *(Tipo: Analytic)*
+- **Analytics → Dashboard → F064 – Analytics Miglioramento Continuo e Adeguamento** *(Tipo: Analytic)*
