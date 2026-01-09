@@ -2,20 +2,21 @@
 id: elenco-funzioni-sinergia-ict
 title: "Elenco Funzioni – Sinergia ICT"
 sidebar_label: "Elenco Funzioni"
-description: "Elenco gerarchico delle funzioni e delle dashboard analytics di Sinergia ICT, organizzato per macro-tipologia e livelli funzionali."
+description: "Elenco gerarchico delle funzioni e delle analytics di Sinergia ICT, organizzato per macro-tipologia e livelli funzionali."
 ---
 
 ## Introduzione
 
 Questo manuale raccoglie l’**elenco delle funzioni della piattaforma Sinergia ICT** in forma gerarchica, raggruppando le voci in due macro-tipologie:
-- **Funzioni** (operatività e gestione)
-- **Analytic** (dashboard e analisi)
 
-Ogni voce è riportata seguendo il percorso **Livello 1 → Livello 2 → Livello 3 → Livello 4**, includendo **codice funzione e nome**.
+- **Funzioni**
+- **Analytic**
+
+Ogni voce è riportata secondo il percorso **Livello 1 → Livello 2 → (Livello 3) → Codice – Nome funzione**, includendo anche il **tipo funzione** indicato nell’elenco.
 
 ---
 
-## Funzioni
+## Macro Tipologia: Funzioni
 
 ### F001–F009 – Knowledge Base
 
@@ -27,7 +28,7 @@ Ogni voce è riportata seguendo il percorso **Livello 1 → Livello 2 → Livell
 
 #### Acquisizione Documenti
 - **Knowledge Base → Acquisizione Documenti → F005 – Elaborare Documenti di Input** *(Tipo: Elaborazione)*
-- **Knowledge Base → Acquisizione Documenti → F006 – Elaborare Scoring Documenti** *(Tipo: Elaborazione)*
+- **Knowledge Base → Acquisizione Documenti → F006 – Elaborare Dati Documenti di Input** *(Tipo: Elaborazione)*
 - **Knowledge Base → Acquisizione Documenti → F007 – Pianificare Elaborazioni Acquisizione Documenti** *(Tipo: Elaborazione)*
 
 #### KB Repository
@@ -36,70 +37,106 @@ Ogni voce è riportata seguendo il percorso **Livello 1 → Livello 2 → Livell
 
 ---
 
-### F010–F047 – Gestione e Analisi ICT
+### F010–F049 – Gestione e Analisi ICT
 
 #### Gestione Governance
 - **Gestione e Analisi ICT → Gestione Governance → Gestione Assets → F010 – Organizzazione ICT interna** *(Tipo: CRUD)*
-- **Gestione e Analisi ICT → Gestione Governance → Gestione Assets → F011 – Organizzazione Assets ICT** *(Tipo: CRUD)*
-- **Gestione e Analisi ICT → Gestione Governance → Gestione Assets → F012 – Relazione tra Servizi e Asset ICT** *(Tipo: CRUD)*
-- **Gestione e Analisi ICT → Gestione Governance → Gestione Assets → F013 – Relazione tra Applicazioni e Servizi ICT** *(Tipo: CRUD)*
-- **Gestione e Analisi ICT → Gestione Governance → Gestione Assets → F014 – Relazione tra Applicazioni e Asset ICT** *(Tipo: CRUD)*
-- **Gestione e Analisi ICT → Gestione Governance → Gestione Assets → F015 – Relazione tra Infrastrutture e Asset ICT** *(Tipo: CRUD)*
-- **Gestione e Analisi ICT → Gestione Governance → Gestione Assets → F016 – Relazione tra Asset ICT** *(Tipo: CRUD)*
-- **Gestione e Analisi ICT → Gestione Governance → Gestione Assets → F017 – Relazione tra Asset ICT** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Governance → Gestione Assets → F011 – Organizzazione Utente** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Governance → Gestione Assets → F012 – Processi di Business interni** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Governance → Gestione Assets → F013 – Servizi dai Fornitori ICT** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Governance → Gestione Assets → F014 – Servizi ICT agli Utenti** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Governance → Gestione Assets → F015 – Applicazioni ICT** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Governance → Gestione Assets → F016 – Infrastrutture ICT** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Governance → Gestione Assets → F017 – Relazioni Tra Asset ICT** *(Tipo: CRUD)*
 
-#### Gestione Eventi
-- **Gestione e Analisi ICT → Gestione Eventi → Incidenti → F018 – Incidenti** *(Tipo: CRUD)*
-- **Gestione e Analisi ICT → Gestione Eventi → Budget ICT → F019 – Budget ICT** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Governance → Gestione Eventi → F018 – Incidenti ICT** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Governance → Gestione Eventi → F019 – Budget ICT** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Governance → Gestione Eventi → F020 – Gestione della Domanda ICT** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Governance → Gestione Eventi → F021 – Gestione Progetti ICT** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Governance → Gestione Eventi → F022 – Gestione Rilasci ICT** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Governance → Gestione Eventi → F023 – Gestione Servizi ICT** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Governance → Gestione Eventi → F024 – Monitoraggio Transazioni** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Governance → Gestione Eventi → F025 – Azioni Correttive** *(Tipo: CRUD)*
 
-#### Gestione Performance Operativa
-- **Gestione e Analisi ICT → Gestione Performance Operativa → Gestione Progetti ICT → F020 – Gestione progetti ICT** *(Tipo: CRUD)*
-- **Gestione e Analisi ICT → Gestione Performance Operativa → Gestione Servizi ICT → F021 – Gestione servizi ICT** *(Tipo: CRUD)*
-- **Gestione e Analisi ICT → Gestione Performance Operativa → Monitoraggio Transazioni → F024 – Monitoraggio transazioni** *(Tipo: CRUD)*
-- **Gestione e Analisi ICT → Gestione Performance Operativa → Azioni Correttive → F025 – Azioni correttive** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Governance → Gestione Fornitori → F026 – Fornitori e Contratti** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Governance → Gestione Fornitori → F027 – Fornitori Critici** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Governance → Gestione Fornitori → F028 – Fornitori SLA** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Governance → Gestione Fornitori → F029 – Mappatura Asset Contratti** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Governance → Gestione Fornitori → F030 – Mappatura Servizi Contratti** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Governance → Gestione Fornitori → F031 – Mappatura Contratti Servizi e Asset** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Governance → Gestione Fornitori → F032 – Mappatura Contratti Fornitori Critici** *(Tipo: CRUD)*
 
-#### Gestione Rischi e Vulnerabilità
-- **Gestione e Analisi ICT → Gestione Rischi e Vulnerabilità → Gestione Rischi ICT → F026 – Registro rischi ICT** *(Tipo: CRUD)*
-- **Gestione e Analisi ICT → Gestione Rischi e Vulnerabilità → Valutazione Rischi ICT → F027 – Valutazione rischi ICT** *(Tipo: CRUD)*
-- **Gestione e Analisi ICT → Gestione Rischi e Vulnerabilità → Gap Analysis → F028 – Gap Analysis** *(Tipo: Analisi)*
+#### Gestione Rischi
+- **Gestione e Analisi ICT → Gestione Rischi → Gestione e Monitoraggio Eventi → F036 – Monitoraggio eventi e indicatori rischio** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Rischi → Gestione e Monitoraggio Eventi → F037 – Monitoraggio Rischi ICT** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Rischi → Gestione Controlli e Misure → F038 – Definizione e Valutazione Controlli** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Rischi → Gestione Controlli e Misure → F039 – Gestione Misure e Azioni** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Rischi → Gestione Controlli e Misure → F040 – Gestione Evidenze** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Rischi → Gestione Controlli e Misure → F041 – Gestione Gap e Remediation** *(Tipo: Analisi)*
+- **Gestione e Analisi ICT → Gestione Rischi → Gestione Controlli e Misure → F042 – Reportistica Rischi** *(Tipo: Funzione)*
 
 #### Gestione Compliance
-- **Gestione e Analisi ICT → Gestione Compliance → Gestione Normative → F035 – Definizione dei Controlli: Rischio Evento e Fattori di Rischio** *(Tipo: CRUD)*
-- **Gestione e Analisi ICT → Gestione Compliance → Gestione Normative → F036 – Definizione dei Controlli: Best Practice** *(Tipo: CRUD)*
-- **Gestione e Analisi ICT → Gestione Compliance → Gestione Normative → F037 – Definizione dei Controlli: Controlli e normative Governance** *(Tipo: CRUD)*
-- **Gestione e Analisi ICT → Gestione Compliance → Gestione Normative → F038 – Definizione Best Practice: Normative Governance** *(Tipo: CRUD)*
-- **Gestione e Analisi ICT → Gestione Compliance → Gestione Normative → F039 – Gestione Normative Governance** *(Tipo: CRUD)*
-- **Gestione e Analisi ICT → Gestione Compliance → Gestione Controlli → F043 – Gestione Controlli Compliance** *(Tipo: CRUD)*
-- **Gestione e Analisi ICT → Gestione Compliance → Gestione Controlli → F044 – Valutazione dei Controlli di Compliance e normative governance** *(Tipo: CRUD)*
-- **Gestione e Analisi ICT → Gestione Compliance → Gestione Controlli → F045 – Visualizzazione Gap Normativi di Compliance e normative governance** *(Tipo: Analisi)*
-- **Gestione e Analisi ICT → Gestione Compliance → Gestione Controlli → F046 – Analytics Compliance ICT** *(Tipo: Analytic)*
-
-#### Analytics e Reporting
-- **Gestione e Analisi ICT → Analytics e Reporting → Analytics → F047 – Analytics ICT** *(Tipo: Analytic)*
+- **Gestione e Analisi ICT → Gestione Compliance → Gestione Normative → F043 – Gestione normative** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Compliance → Gestione Normative → F044 – Mappatura normative-processi** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Compliance → Gestione Controlli → F045 – Gestione controlli compliance** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Compliance → Gestione Controlli → F046 – Valutazione controlli** *(Tipo: CRUD)*
+- **Gestione e Analisi ICT → Gestione Compliance → Gestione Controlli → F047 – Gap normativi** *(Tipo: Analisi)*
+- **Gestione e Analisi ICT → Gestione Compliance → Gestione Controlli → F048 – Evidenze e Audit trail** *(Tipo: Funzione)*
+- **Gestione e Analisi ICT → Gestione Compliance → Gestione Controlli → F049 – Reporting Compliance** *(Tipo: Funzione)*
 
 ---
 
-### F052–F059 – Administration
+### F050–F051 – Agents
 
-#### Flusso di lavoro
-- **Administration → Flusso di lavoro → F052 – Le mie Attività** *(Tipo: Funzione)*
-- **Administration → Flusso di lavoro → F053 – Archivio Documentale** *(Tipo: Funzione)*
-- **Administration → Flusso di lavoro → F054 – Monitoraggio Processi** *(Tipo: Funzione)*
-- **Administration → Flusso di lavoro → F055 – Configurazione aree tematiche** *(Tipo: Funzione)*
-- **Administration → Flusso di lavoro → F056 – Configurazione documenti** *(Tipo: Funzione)*
-- **Administration → Flusso di lavoro → F057 – Configurazione processi** *(Tipo: Funzione)*
-- **Administration → Flusso di lavoro → F058 – Configurazione tipo processi** *(Tipo: Funzione)*
-- **Administration → Flusso di lavoro → F059 – Configurazione ruoli utenti** *(Tipo: Funzione)*
+#### (varie)
+- **Agents → Agenti di supporto → F050 – Agenti di supporto** *(Tipo: Funzione)*
+
+#### Gap Analysis Contratti Fornitori
+- **Agents → Gap Analysis Contratti Fornitori → F051 – Gap Analysis Contratti Fornitori** *(Tipo: Analytic)*
 
 ---
 
-## Analytic
+### F055–F064 – Administration
 
-### F060–F064 – Analytics
+#### Flussi Lavoro
+- **Administration → Flussi Lavoro → Configurazione → F055 – Aree Tematiche** *(Tipo: Funzione)*
+- **Administration → Flussi Lavoro → Configurazione → F056 – Documenti di WFM** *(Tipo: Funzione)*
+- **Administration → Flussi Lavoro → Configurazione → F057 – Processi di WFM** *(Tipo: Funzione)*
+- **Administration → Flussi Lavoro → Configurazione → F058 – Tipi di Processo** *(Tipo: Funzione)*
+- **Administration → Flussi Lavoro → Configurazione → F059 – Ruoli e Utenti** *(Tipo: Funzione)*
 
-#### Dashboard
-- **Analytics → Dashboard → F060 – Analytics Performance e Gestione Operativa** *(Tipo: Analytic)*
-- **Analytics → Dashboard → F061 – Analytics Rischi, Sicurezza e Vulnerabilità** *(Tipo: Analytic)*
-- **Analytics → Dashboard → F062 – Analytics Compliance, Audit e Governance** *(Tipo: Analytic)*
-- **Analytics → Dashboard → F063 – Analytics Normativa e Compliance** *(Tipo: Analytic)*
-- **Analytics → Dashboard → F064 – Analytics Miglioramento Continuo e Adeguamento** *(Tipo: Analytic)*
+#### Configurazioni
+- **Administration → Configurazioni → Eventi → F060 – Definizione Eventi** *(Tipo: Funzione)*
+- **Administration → Configurazioni → Eventi → F061 – Sottoscrizione Eventi** *(Tipo: Funzione)*
+- **Administration → Configurazioni → Eventi → F062 – Log Eventi** *(Tipo: Funzione)*
+- **Administration → Configurazioni → Ontologie → F063 – Ontologie** *(Tipo: Funzione)*
+- **Administration → Configurazioni → Parametri Documenti → F064 – Parametri Documenti** *(Tipo: Funzione)*
+
+---
+
+## Macro Tipologia: Analytic
+
+### F033–F035 – Gestione e Analisi ICT
+
+#### Gestione Governance
+- **Gestione e Analisi ICT → Gestione Governance → F033 – Gestione Reports e Normative Governance ICT** *(Tipo: Analytic)*
+
+#### Gestione Rischi
+- **Gestione e Analisi ICT → Gestione Rischi → Definizione e Valutazione Rischi e Fattori di Rischio → F034 – Gestione Catalogo Rischi Evento e Fattori di Rischio** *(Tipo: Analytic)*
+- **Gestione e Analisi ICT → Gestione Rischi → Definizione e Valutazione Rischi e Fattori di Rischio → F035 – Definizione dei Controlli:  Rischio Evento e Fattori di Rischio** *(Tipo: Analytic)*
+
+---
+
+### F051–F051 – Agents
+
+#### Gap Analysis Contratti Fornitori
+- **Agents → Gap Analysis Contratti Fornitori → F051 – Gap Analysis Contratti Fornitori** *(Tipo: Analytic)*
+
+---
+
+### F052–F054 – Administration
+
+#### Flussi Lavoro
+- **Administration → Flussi Lavoro → F052 – Le mie Attività** *(Tipo: Analytic)*
+- **Administration → Flussi Lavoro → F053 – Archivio Documentale** *(Tipo: Analytic)*
+- **Administration → Flussi Lavoro → F054 – Monitoraggio Processi** *(Tipo: Analytic)*
