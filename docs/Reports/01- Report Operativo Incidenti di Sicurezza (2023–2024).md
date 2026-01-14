@@ -55,11 +55,14 @@ Il report è destinato a:
 ---
 
 ## 📄 Download del report
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <a
-  href="/files_per_download/report-operativo-incidenti/Report_Operativo_Incidenti_2023_2024_v01.docx"
+  className="button button--primary"
+  href={useBaseUrl('/files_per_download/report-operativo-incidenti/1-Report Operativo Incidenti v01.docx')}
   download
-  class="button button--primary"
 >
-📥 Scarica il report operativo (DOCX)
+  📥 Scarica il report operativo (DOCX)
 </a>
+>
+
