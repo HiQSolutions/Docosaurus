@@ -6,182 +6,141 @@ sidebar_label: F049 – Report Agents
 
 ## Descrizione generale
 
-La funzione **Report Agents** è un sistema di reportistica intelligente multi-agente che consente di generare automaticamente **report aziendali strutturati e completi** a partire da richieste in linguaggio naturale.
+La funzione **Report Agents** è un sistema di reportistica intelligente multi-agente che consente di generare automaticamente **report aziendali strutturati e completi** a partire da richieste formulate in linguaggio naturale.
 
-Il sistema combina:
-- dati numerici provenienti dai database ICT;
-- informazioni strutturali e relazionali sugli asset;
-- capacità di analisi, correlazione e sintesi testuale.
-
-Il risultato è un documento finale (formato **DOCX**) pronto all’uso, contenente testi analitici, tabelle, grafici e raccomandazioni operative.
+Il sistema integra dati numerici provenienti dai database ICT con informazioni strutturali sugli asset e capacità avanzate di analisi, sintesi e correlazione, producendo un documento finale pronto all’uso in formato **DOCX**.
 
 ---
 
 ## Obiettivo della funzione
 
-Report Agents ha l’obiettivo di:
-- ridurre drasticamente i tempi di produzione della reportistica;
-- standardizzare la qualità dei report;
-- supportare analisi complesse anche per utenti non tecnici;
-- trasformare i dati in contenuti decisionali ad alto valore.
+La funzione Report Agents è progettata per:
+- automatizzare la produzione di report complessi;
+- ridurre tempi e sforzi manuali;
+- garantire coerenza e qualità della reportistica;
+- supportare il processo decisionale di governance ICT.
 
 ---
 
 ## Interfaccia utente
 
-La schermata principale presenta:
+La schermata principale della funzione presenta:
 - area di inserimento del prompt;
 - suggerimenti di richieste predefinite;
 - selezione della modalità di generazione del report;
-- stato di avanzamento del processo;
-- pulsante di download del report finale.
+- area di visualizzazione dello stato del processo.
 
-![Interfaccia principale Report Agents](/img/f49-report-1.png)
+![Interfaccia principale Report Agents](/img/F49-Agent report1.png)
 
 ---
 
 ## Inserimento del prompt
 
-L’utente può descrivere liberamente il report desiderato, ad esempio:
+L’utente può inserire liberamente una richiesta descrittiva del report desiderato, ad esempio:
 
-> “Crea un report sulle prestazioni del sistema informativo:  
-> tempo medio di risposta delle applicazioni critiche,  
-> capacità di elaborazione dei server,  
-> utilizzo delle risorse (CPU, RAM, storage).”
+> “Crea un report sulle prestazioni del sistema informativo: tempo medio di risposta delle applicazioni critiche, capacità di elaborazione dei server, utilizzo delle risorse (CPU, RAM, storage).”
 
-Il sistema evidenzia eventuali esempi di prompt direttamente nell’interfaccia.
+Il prompt può essere personalizzato in base al contesto di analisi.
 
-![Inserimento del prompt](/img/f49-report-2.png)
+![Inserimento del prompt](/img/F49-Agent report2.png)
 
 ---
 
 ## Modalità di generazione del report
 
-Durante la fase di impostazione, l’utente può scegliere tra due modalità:
+Durante la fase iniziale, l’utente può scegliere tra due modalità operative.
 
-### 1. Template Dinamico (automatico)
+### Template dinamico
 
-Gli agenti:
-- analizzano il prompt;
-- generano autonomamente l’indice e la struttura del report;
-- selezionano dati, metriche e visualizzazioni più coerenti.
+In questa modalità gli agenti:
+- interpretano il prompt;
+- costruiscono automaticamente l’indice del report;
+- definiscono sezioni e contenuti in base ai dati disponibili.
 
-Questa modalità è ideale per:
-- analisi esplorative;
-- report rapidi;
-- utenti che desiderano delegare la struttura all’AI.
+Questa modalità è adatta quando si desidera delegare completamente la struttura del report al sistema.
 
-![Template dinamico](/img/f49-report-3.png)
+![Selezione template dinamico](/img/F49-Agentreport3.png)
 
 ---
 
-### 2. Struttura guidata (interattiva)
+## Generazione della struttura del report
 
-In alternativa, l’utente può:
-- dialogare con l’agente;
-- modificare sezioni e sottosezioni;
-- personalizzare l’indice prima della generazione finale.
+Dopo l’inserimento del prompt, il sistema propone una **struttura iniziale del report**, composta da sezioni e sottosezioni coerenti con la richiesta.
 
-Questa modalità consente un maggiore controllo sul contenuto del report.
+L’utente può:
+- accettare la struttura proposta;
+- oppure modificarla dialogando con l’agente prima della generazione finale.
 
----
-
-## Proposta di struttura del report
-
-Una volta inserito il prompt, il sistema:
-- genera una **struttura iniziale del report**;
-- presenta sezioni, sottosezioni e titoli;
-- chiede conferma o modifica all’utente.
-
-![Struttura iniziale del report](/img/f49-report-4.png)
-
-Esempio di sezioni generate:
-- Sintesi esecutiva
-- Analisi del tempo medio di risposta
-- Capacità di elaborazione dei server
-- Utilizzo risorse (CPU, RAM, storage)
-- Criticità, SLA e correlazioni applicative
-- Conclusioni operative
+![Struttura iniziale del report](/img/F49-Agentreport4.png)
 
 ---
 
-## Generazione del report
+## Elaborazione e generazione del report
 
-Dopo la conferma della struttura:
-- il sistema avvia l’elaborazione;
-- interroga i database;
-- calcola metriche e indicatori;
-- genera grafici e tabelle;
-- produce analisi descrittive e interpretative.
+Una volta confermata la struttura:
+- il sistema interroga i database;
+- elabora le metriche richieste;
+- genera testi descrittivi e analitici;
+- produce grafici e tabelle coerenti con i dati.
 
-Il processo richiede alcuni minuti, in base alla complessità del report.
+Il processo è completamente automatizzato.
 
-![Generazione del report](/img/f49-report-5.png)
+![Avanzamento generazione report](/img/f49-Agentreport5.png)
 
 ---
 
-## Contenuti del report finale
+## Contenuto del report
 
 Il report generato include:
-- testi sintetici e analitici;
-- grafici automatici coerenti con i dati;
-- tabelle di dettaglio;
+- sezioni di sintesi esecutiva;
+- analisi dettagliate delle prestazioni;
+- grafici e tabelle integrate;
 - correlazioni tra applicazioni, nodi e risorse;
-- considerazioni interpretative sui risultati;
-- suggerimenti di azioni migliorative.
+- considerazioni interpretative sui risultati.
 
-![Esempio contenuto report](/img/f49-report-6.png)
+![Esempio contenuto del report](/img/f49-Agentreport6.png)
 
 ---
 
 ## Analisi avanzata e correlazioni
 
 Gli agenti sono in grado di:
-- correlare applicazioni e nodi infrastrutturali;
-- evidenziare colli di bottiglia;
-- individuare asset critici;
-- supportare valutazioni su SLA, RTO e priorità operative.
+- identificare applicazioni critiche;
+- correlare consumi e tempi di risposta con i nodi infrastrutturali;
+- evidenziare colli di bottiglia e criticità operative;
+- supportare valutazioni su SLA e priorità di intervento.
 
-Il report non si limita a descrivere i dati, ma ne esplicita il significato operativo.
-
-![Analisi e correlazioni](/img/f49-report-7.png)
+![Analisi e correlazioni applicative](/img/f49-Agentreport7.png)
 
 ---
 
-## Completamento e download
+## Completamento del processo
 
-Al termine del processo:
-- il sistema conferma la generazione del report;
-- il file viene reso disponibile in formato **DOCX**;
-- l’utente può scaricarlo direttamente dall’interfaccia.
+Al termine dell’elaborazione, il sistema notifica il completamento del report e rende disponibile il file finale per il download.
 
-![Report generato con successo](/img/f49-report-8.png)
+![Report generato con successo](/img/f49-Agentreport8.png)
 
 ---
 
 ## Output finale
 
-Il documento finale è:
-- strutturato con indice automatico;
-- pronto per la condivisione;
-- utilizzabile per scopi direzionali, operativi o di audit;
-- coerente con le esigenze di governance ICT.
+Il documento finale è un report strutturato in formato **DOCX**, completo di indice, sezioni analitiche, grafici e conclusioni operative, pronto per la condivisione e l’utilizzo in ambito direzionale, operativo o di audit.
 
-![Documento finale](/img/f49-report-9.png)
+![Documento finale generato](/img/f49-Agentreport9.png)
 
 ---
 
 ## Valore per l’utente
 
 La funzione **Report Agents** consente di:
-- automatizzare la reportistica aziendale;
+- generare report complessi partendo da semplici richieste;
 - migliorare la qualità delle analisi;
-- ridurre errori manuali;
-- accelerare i processi decisionali;
-- supportare governance, IT management e compliance.
+- standardizzare la reportistica ICT;
+- accelerare il processo decisionale;
+- supportare attività di governance e controllo.
 
 ---
 
 ## Sintesi finale
 
-Report Agents rappresenta uno strumento avanzato di **AI applicata alla reportistica ICT**, capace di trasformare semplici richieste in report completi, strutturati e ricchi di insight, combinando dati, analisi e raccomandazioni in un unico flusso automatizzato.
+Report Agents rappresenta una soluzione avanzata di **AI applicata alla reportistica ICT**, in grado di trasformare richieste in linguaggio naturale in documenti strutturati, analitici e pronti all’uso, combinando dati, analisi e raccomandazioni operative in un unico flusso automatizzato.
