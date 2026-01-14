@@ -1,0 +1,132 @@
+Knowledge Base → Acquisizione Documenti → Elaborare Scoring Documenti
+Il testo è pensato come input di alto livello per ChatGPT e come documentazione funzionale/tecnica interna. Linguaggio chiaro, professionale, riutilizzabile.
+Gap Agent – Estrazione Input e Scoring Documenti
+Knowledge Base: Acquisizione Documenti → Elaborare Scoring Documenti
+1. Obiettivo del componente
+Il Gap Agent – Input Extraction è un’applicazione avanzata basata su Streamlit che consente di:
+analizzare documenti normativi in formato PDF
+estrarre automaticamente contenuti rilevanti (obblighi, prescrizioni, responsabilità)
+riformularli in prescrizioni di compliance operative
+classificarli secondo Template / Topic / Subtopic
+calcolare uno scoring di rilevanza basato su criteri configurabili
+salvare e gestire i risultati su database SQL
+produrre report Excel strutturati
+Il componente è progettato per supportare analisi di gap normativo, assessment di conformità e attività di governance regolamentare.
+2. Input del sistema
+2.1 Documento di input
+Formato: PDF
+Contenuto: normativa, regolamenti, direttive, leggi
+Lingua: principalmente italiano (supporto parziale multilingua)
+Selezione pagine: opzionale tramite range (es. 25-27, 35, 45-50)
+In assenza di range, vengono elaborate automaticamente le prime 50 pagine.
+2.2 Dati di configurazione (Database)
+Il sistema utilizza tabelle di configurazione presenti su database SQL:
+Templates
+Topics
+Subtopics
+Criteri di Scoring (categorie, punteggi, keyword)
+Questi elementi guidano classificazione e scoring del contenuto estratto.
+3. Output del sistema
+3.1 Prescrizioni di Compliance
+Per ogni contenuto rilevante estratto dal documento vengono prodotti:
+prescrizioni riformulate in forma chiara, operativa e azionabile
+riferimento normativo strutturato (Capitolo, Sezione, Articolo, Paragrafo)
+pagina di origine
+classificazione Template / Topic / Subtopic
+punteggio totale di rilevanza
+criteri di scoring applicati
+3.2 Output strutturati
+Tabelle SQL dedicate per documento
+Log di esecuzione (Run Log)
+Report Excel con:
+risultati ordinati per punteggio
+sintesi dell’elaborazione
+analisi per topic
+dettaglio regole di scoring
+4. Architettura logica
+Il componente è strutturato in quattro livelli principali:
+4.1 Interfaccia Utente (Streamlit)
+interfaccia web a schede
+configurazione guidata tramite sidebar
+gestione dello stato di sessione
+anteprima risultati
+editing interattivo dei dati estratti
+download controllato dei report
+4.2 Livello di Parsing Documentale
+lettura PDF tramite PyMuPDF
+estrazione testo pagina per pagina
+rilevamento automatico di:
+Capitoli
+Sezioni
+Articoli
+Paragrafi
+Vengono utilizzate espressioni regolari robuste per supportare strutture normative eterogenee.
+4.3 Livello LLM (AI)
+Basato su Azure OpenAI (GPT-4o), svolge tre funzioni chiave:
+a) Segmentazione del testo
+estrazione delle sole unità normative rilevanti
+esclusione di preamboli ed esempi
+fallback automatico su regex in caso di errore LLM
+b) Creazione prescrizioni
+riformulazione del testo normativo in prescrizioni di compliance
+linguaggio imperativo e operativo
+suddivisione semantica in più prescrizioni se necessario
+deduplicazione automatica
+c) Classificazione semantica
+assegnazione a Template / Topic / Subtopic
+supporto multi-template
+fallback basato su keyword se il mapping LLM fallisce
+4.4 Livello di Scoring
+Lo scoring viene calcolato tramite:
+regole configurabili su database
+associazione keyword → categoria → punteggio
+supporto multi-template
+tracciamento dettagliato delle regole applicate
+Il punteggio finale rappresenta la rilevanza normativa e di compliance della prescrizione.
+5. Flusso funzionale end-to-end
+caricamento PDF
+selezione template di riferimento
+selezione opzionale delle pagine
+analisi documento e identificazione normativa
+segmentazione per pagina
+estrazione contenuti rilevanti
+generazione prescrizioni di compliance
+classificazione semantica
+calcolo scoring
+salvataggio risultati su database
+generazione report Excel
+revisione e modifica manuale (opzionale)
+aggiornamento database post-revisione
+6. Gestione Database
+6.1 Tabelle principali
+Gap_Agent_[Documento]
+risultati di estrazione e scoring
+Gap_Agent_RunLog
+log di ogni esecuzione
+durata, numero pagine, item estratti, stato
+Ogni run è identificato da un Run ID univoco.
+6.2 Aggiornamento dati
+possibilità di modifica manuale dei risultati
+aggiornamento completo della tabella SQL
+rigenerazione del report Excel aggiornato
+7. Logging e tracciabilità
+Il sistema registra:
+avvio e fine elaborazione
+errori LLM e fallback
+metriche di performance
+template utilizzati
+stato finale dell’elaborazione
+Questo garantisce auditabilità e riproducibilità.
+8. Caratteristiche non funzionali
+Affidabilità: fallback automatici su parsing e classificazione
+Scalabilità: elaborazione per pagine e chunk
+Manutenibilità: logica modulare e separata
+Trasparenza: scoring spiegabile e tracciato
+Governance: configurazione guidata da database
+9. Posizionamento nella Knowledge Base
+Acquisizione Documenti → Elaborare Scoring Documenti
+Ruolo:
+motore centrale per l’analisi normativa
+base per gap analysis e assessment di conformità
+generazione strutturata dell’input per agenti di compliance
+supporto a decisioni regolamentari e controlli interni
