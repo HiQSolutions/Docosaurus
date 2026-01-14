@@ -187,3 +187,53 @@ sidebar_label: F048 – GOV ICT Q&A Agents (Video)
 ### Grafico andamento mensile
 
 ![Grafico andamento mensile](/img/f48-Q&A7.png)
+
+---
+id: f048-gov-ict-qa-agents-video
+title: F048 – GOV ICT Q&A Agents (Video)
+sidebar_label: F048 – GOV ICT Q&A Agents (Video)
+---
+
+## Video dimostrativo
+
+<iframe
+  src="https://laurenticonsulting-my.sharepoint.com/personal/riccardo_laurenti_hiqsolutions_it/_layouts/15/embed.aspx?UniqueId=ff3f1380-be0f-4c20-8b0f-8f9b6c8ae5f0&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+  width="640"
+  height="360"
+  frameBorder="0"
+  scrolling="no"
+  allowFullScreen
+  title="VD8.Q&A.mp4"
+/>
+
+---
+
+## Schermate di riferimento
+
+### Home GOV ICT Q&A Agents
+
+![Home GOV ICT Q&A Agents](/img/f48-Q&A1.png)
+
+### Inserimento della domanda
+
+![Inserimento della domanda](/img/f48-Q&A2.png)
+
+### Interrogazione del database
+
+![Interrogazione del database](/img/f48-Q&A3.png)
+
+### Tabella incidenti per mese
+
+![Tabella incidenti per mese](/img/f48-Q&A4.png)
+
+### Analisi quantitativa e pattern
+
+![Analisi quantitativa e pattern](/img/f48-Q&A5.png)
+
+### Pattern e correlazioni operative
+
+![Pattern e correlazioni operative](/img/f48-Q&A6.png)
+
+### Grafico andamento mensile
+
+![Grafico andamento mensile](/img/f48-Q&A7.png)
