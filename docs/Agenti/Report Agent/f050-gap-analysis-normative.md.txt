@@ -1,0 +1,103 @@
+---
+id: f050-gap-analysis-normative
+title: F050 – Sinergia Gap Agent – Gap Analysis Normative
+sidebar_label: F050 – Sinergia Gap Agent
+---
+
+## Descrizione generale
+
+La funzione **Sinergia Gap Agent** è un assistente dedicato alla **Gap Analysis normativa**, progettato per confrontare prescrizioni normative con evidenze interne (documenti aziendali), supportando la valutazione tramite ricerca e analisi automatizzata.
+
+L’utente può selezionare la normativa da analizzare e i documenti interni di riferimento, avviare la valutazione e ottenere un **report DOCX** con risultati strutturati, tabelle, grafici e azioni di rimedio.
+
+![Home Sinergia Gap Agent](/img/f050-Gap Analysis Normative 1.png)
+
+---
+
+## Selezione della normativa e dei documenti interni
+
+### Seleziona la normativa
+
+Nella sezione iniziale l’utente seleziona la normativa da analizzare tramite menu a tendina.
+
+![Selezione normativa](/img/f050-Gap Analysis Normative 2.png)
+
+Una volta selezionata la normativa, il sistema mostra l’elenco delle prescrizioni disponibili in forma tabellare.
+
+![Tabella prescrizioni normativa](/img/f050-Gap Analysis Normative 3.png)
+
+---
+
+### Caricamento e avvio
+
+In fase di caricamento, il sistema prepara i dati della normativa selezionata per la valutazione.
+
+![Caricamento dati normativa](/img/f050-Gap Analysis Normative 4.png)
+
+---
+
+### Selezione dei documenti interni
+
+L’utente può selezionare i **documenti interni** da utilizzare come evidenze, scegliendoli dalla lista dedicata.
+
+![Selezione documenti interni](/img/f050-Gap Analysis Normative 5.png)
+
+---
+
+## Parametri di ricerca e impostazioni LLM
+
+Nella sezione **Parametri ricerca & LLM** l’utente può configurare i parametri di valutazione, tra cui:
+- numero di risultati considerati per riga;
+- modalità verbosa (log esteso);
+- titolo del report DOCX;
+- nome file di output.
+
+Infine, può avviare la valutazione e la generazione del documento.
+
+![Parametri e avvio generazione DOCX](/img/f050-Gap Analysis Normative 6.png)
+
+---
+
+## Esecuzione della valutazione
+
+Dopo l’avvio, il sistema inizializza i servizi e procede con l’elaborazione, mantenendo l’utente aggiornato sullo stato.
+
+![Inizializzazione e processo](/img/f050-Gap Analysis Normative 7.png)
+
+---
+
+## Output: report di compliance
+
+Al termine dell’elaborazione viene prodotto un **report analitico** (DOCX) contenente:
+- risultati di valutazione delle prescrizioni;
+- gap descritti;
+- riferimenti ed evidenze;
+- azioni di rimedio proposte.
+
+![Copertina report generato](/img/f050-Gap Analysis Normative 8.png)
+
+---
+
+## Tabelle di valutazione e azioni di rimedio
+
+Il report include tabelle strutturate con:
+- citazioni normative / riferimenti,
+- punteggi e percentuali di gap,
+- descrizione del gap,
+- azioni di rimedio suggerite.
+
+![Tabella citazioni, punteggio, gap e rimedi](/img/f050-Gap Analysis Normative 9.png)
+
+---
+
+## Grafici e piano di remediation
+
+Il report può includere visualizzazioni (grafici) e un piano di remediation organizzato per orizzonte temporale (breve/medio/lungo termine), utile per pianificare interventi e priorità.
+
+![Grafico gap e piano di remediation](/img/f050-Gap Analysis Normative 10.png)
+
+---
+
+## Sintesi finale
+
+La funzione **Sinergia Gap Agent** consente di trasformare l’analisi normativa da attività manuale a processo guidato, producendo risultati tracciabili e riutilizzabili in report completi, con evidenze, misurazione del gap e azioni di rimedio.
