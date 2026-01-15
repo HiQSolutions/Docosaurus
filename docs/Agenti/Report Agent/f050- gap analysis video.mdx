@@ -18,19 +18,35 @@ Attraverso l’integrazione di **Azure Search** e **modelli LLM**, il sistema co
 
 ---
 
+## Video dimostrativo
+
+Il seguente video mostra il flusso completo di utilizzo della funzione **F050 – Gap Analysis Normative**, dalla selezione della normativa fino alla generazione del report DOCX.
+
+<iframe
+  src="https://laurenticonsulting-my.sharepoint.com/personal/riccardo_laurenti_hiqsolutions_it/_layouts/15/embed.aspx?UniqueId=72de49e4-5893-4561-836f-d94c7b32ca68&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+  width="640"
+  height="360"
+  frameborder="0"
+  scrolling="no"
+  allowfullscreen
+  title="vd16 gap.mp4">
+</iframe>
+
+---
+
 ## Obiettivo
 
-- Analizzare prescrizioni normative strutturate
-- Confrontarle con evidenze documentali interne
-- Calcolare punteggi di gap e severità
+- Analizzare prescrizioni normative strutturate  
+- Confrontarle con evidenze documentali interne  
+- Calcolare punteggi di gap e severità  
 - Generare automaticamente un **report di compliance in formato DOCX**
 
 ---
 
 ## Prerequisiti
 
-- Prescrizioni normative caricate a sistema
-- Documenti interni disponibili (policy, procedure, regolamenti, report)
+- Prescrizioni normative caricate a sistema  
+- Documenti interni disponibili (policy, procedure, regolamenti, report)  
 - Accesso al modulo **Sinergia Gap Agent**
 
 ---
@@ -80,10 +96,10 @@ Il sistema effettua il mapping automatico tra prescrizioni, topic, subtopic e pu
 ### 6. Configurazione parametri di analisi
 
 È possibile configurare:
-- Numero di risultati Azure Search
-- Modalità verbosa (log esteso)
-- Titolo del report
-- Nome del file di output
+- Numero di risultati Azure Search  
+- Modalità verbosa (log esteso)  
+- Titolo del report  
+- Nome del file di output  
 
 ![](/img/f050-Gap Analysis Normative 6.png)
 
@@ -109,11 +125,11 @@ Il sistema elabora i dati, esegue l’analisi LLM e genera il report finale.
 
 Il report DOCX generato include:
 
-- Sintesi esecutiva
-- Citazioni normative con punteggio di gap
-- Descrizione del gap rilevato
-- Percentuale di non conformità
-- Azioni di remediation suggerite
+- Sintesi esecutiva  
+- Citazioni normative con punteggio di gap  
+- Descrizione del gap rilevato  
+- Percentuale di non conformità  
+- Azioni di remediation suggerite  
 
 ![](/img/f050-Gap Analysis Normative 9.png)
 
@@ -122,35 +138,19 @@ Il report DOCX generato include:
 ## Analisi grafica e piano di remediation
 
 Il report contiene inoltre:
-- Grafici di severità del gap per subtopic
+- Grafici di severità del gap per subtopic  
 - Piano di remediation suddiviso per orizzonte temporale (breve / medio / lungo termine)
 
 ![](/img/f050-Gap Analysis Normative 10.png)
 
 ---
 
-## Video dimostrativo
-
-Il seguente video mostra l’intero flusso operativo della funzione **F050 – Gap Analysis Normative**.
-
-<iframe
-  src="https://laurenticonsulting-my.sharepoint.com/personal/riccardo_laurenti_hiqsolutions_it/_layouts/15/embed.aspx?UniqueId=72de49e4-5893-4561-836f-d94c7b32ca68&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
-  width="640"
-  height="360"
-  frameborder="0"
-  scrolling="no"
-  allowfullscreen
-  title="vd16 gap.mp4">
-</iframe>
-
----
-
 ## Output finale
 
-- 📄 **Report DOCX di Compliance**
-- 📊 Analisi quantitativa del gap normativo
-- 🛠️ Azioni di remediation strutturate
-- 🤖 Supporto decisionale basato su LLM
+- 📄 **Report DOCX di Compliance**  
+- 📊 Analisi quantitativa del gap normativo  
+- 🛠️ Azioni di remediation strutturate  
+- 🤖 Supporto decisionale basato su LLM  
 
 ---
 
