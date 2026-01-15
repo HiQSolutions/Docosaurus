@@ -15,6 +15,19 @@ L’obiettivo principale è facilitare la comprensione dei fenomeni operativi e 
 
 ---
 
+## Video dimostrativo
+
+<iframe
+  src="https://laurenticonsulting-my.sharepoint.com/personal/riccardo_laurenti_hiqsolutions_it/_layouts/15/embed.aspx?UniqueId=ff3f1380-be0f-4c20-8b0f-8f9b6c8ae5f0&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+  width="640"
+  height="360"
+  frameBorder="0"
+  scrolling="no"
+  allowFullScreen
+  title="VD8.Q&A.mp4"
+/>
+
+
 ## Ambito di utilizzo
 
 La funzione è pensata per:
@@ -33,7 +46,7 @@ La schermata principale presenta:
 - suggerimenti di domande predefinite;
 - output strutturati sotto forma di tabelle, testi analitici e grafici.
 
-![Interfaccia principale GOV ICT Q&A Agents](/img/f48-qa-1.png)
+![Interfaccia principale GOV ICT Q&A Agents](/img/f48-Q&A1.png)
 
 ---
 
@@ -45,7 +58,7 @@ L’utente formula una domanda in linguaggio naturale, ad esempio:
 
 > “Fornisci una panoramica degli incidenti avvenuti nel 2024 con un grafico che mostra l’andamento mensile.”
 
-![Inserimento della richiesta](/img/f48-qa-2.png)
+![Inserimento della richiesta](/img/f48-Q&A2.png)
 
 ---
 
@@ -56,7 +69,7 @@ Il sistema:
 - arricchisce i risultati con metadati contestuali;
 - aggrega i dati per periodo temporale (mese).
 
-![Recupero e arricchimento dati](/img/f48-qa-3.png)
+![Recupero e arricchimento dati](/img/f48-Q&A3.png)
 
 ---
 
@@ -67,7 +80,7 @@ Il risultato include:
 - **analisi quantitativa automatica**;
 - indicatori statistici (media, deviazione standard, coefficienti di variazione).
 
-![Tabella dati mensili](/img/f48-qa-4.png)
+![Tabella dati mensili](/img/f48-Q&A4.png)
 
 ---
 
@@ -85,7 +98,7 @@ Questa analisi consente di distinguere tra:
 - possibili problemi di rilevamento o segnalazione;
 - effetti di interventi correttivi o cambi di processo.
 
-![Analisi quantitativa e pattern osservati](/img/f48-qa-5.png)
+![Analisi quantitativa e pattern osservati](/img/f48-Q&A5.png)
 
 ---
 
@@ -98,7 +111,7 @@ La funzione individua automaticamente:
 
 Il sistema supporta così un’analisi di tipo **root cause oriented**, orientata alla prevenzione.
 
-![Pattern e correlazioni operative](/img/f48-qa-6.png)
+![Pattern e correlazioni operative](/img/f48-Q&A6.png)
 
 ---
 
@@ -121,7 +134,7 @@ Questo approccio consente al management di comprendere rapidamente:
 
 Il grafico generato automaticamente mostra l’andamento mensile degli incidenti, rendendo immediata la lettura dei trend e delle anomalie.
 
-![Grafico andamento mensile incidenti 2024](/img/f48-qa-7.png)
+![Grafico andamento mensile incidenti 2024](/img/f48-Q&A7.png)
 
 ---
 
@@ -138,102 +151,6 @@ La funzione **GOV ICT Q&A Agents** permette di:
 ## Sintesi finale
 
 GOV ICT Q&A Agents rappresenta un potente strumento di **intelligenza analitica applicata alla governance ICT**, capace di trasformare dati e documenti in insight strategici, favorendo un approccio proattivo alla gestione del rischio e alla conformità normativa.
----
-id: f048-gov-ict-qa-agents-video
-title: F048 – GOV ICT Q&A Agents (Video)
-sidebar_label: F048 – GOV ICT Q&A Agents (Video)
----
 
-## Video dimostrativo
 
-<iframe
-  src="https://laurenticonsulting-my.sharepoint.com/personal/riccardo_laurenti_hiqsolutions_it/_layouts/15/embed.aspx?UniqueId=ff3f1380-be0f-4c20-8b0f-8f9b6c8ae5f0&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
-  width="640"
-  height="360"
-  frameBorder="0"
-  scrolling="no"
-  allowFullScreen
-  title="VD8.Q&A.mp4"
-/>
 
----
-
-## Schermate di riferimento
-
-### Home
-
-![Home GOV ICT Q&A Agents](/img/f48-Q&A1.png)
-
-### Inserimento domanda
-
-![Inserimento domanda](/img/f48-Q&A2.png)
-
-### Interrogazione database
-
-![Interrogazione database](/img/f48-Q&A3.png)
-
-### Tabella incidenti per mese
-
-![Tabella incidenti per mese](/img/f48-Q&A4.png)
-
-### Analisi quantitativa e pattern
-
-![Analisi quantitativa e pattern](/img/f48-Q&A5.png)
-
-### Pattern e correlazioni
-
-![Pattern e correlazioni](/img/f48-Q&A6.png)
-
-### Grafico andamento mensile
-
-![Grafico andamento mensile](/img/f48-Q&A7.png)
-
----
-id: f048-gov-ict-qa-agents-video
-title: F048 – GOV ICT Q&A Agents (Video)
-sidebar_label: F048 – GOV ICT Q&A Agents (Video)
----
-
-## Video dimostrativo
-
-<iframe
-  src="https://laurenticonsulting-my.sharepoint.com/personal/riccardo_laurenti_hiqsolutions_it/_layouts/15/embed.aspx?UniqueId=ff3f1380-be0f-4c20-8b0f-8f9b6c8ae5f0&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
-  width="640"
-  height="360"
-  frameBorder="0"
-  scrolling="no"
-  allowFullScreen
-  title="VD8.Q&A.mp4"
-/>
-
----
-
-## Schermate di riferimento
-
-### Home GOV ICT Q&A Agents
-
-![Home GOV ICT Q&A Agents](/img/f48-Q&A1.png)
-
-### Inserimento della domanda
-
-![Inserimento della domanda](/img/f48-Q&A2.png)
-
-### Interrogazione del database
-
-![Interrogazione del database](/img/f48-Q&A3.png)
-
-### Tabella incidenti per mese
-
-![Tabella incidenti per mese](/img/f48-Q&A4.png)
-
-### Analisi quantitativa e pattern
-
-![Analisi quantitativa e pattern](/img/f48-Q&A5.png)
-
-### Pattern e correlazioni operative
-
-![Pattern e correlazioni operative](/img/f48-Q&A6.png)
-
-### Grafico andamento mensile
-
-![Grafico andamento mensile](/img/f48-Q&A7.png)
