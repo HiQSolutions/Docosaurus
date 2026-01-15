@@ -109,8 +109,9 @@ Il report è rivolto a:
 
 <a
   className="button button--primary"
-  href={useBaseUrl('/files_per_download/2-Compliance - Gap Procedura Incidenti v01')}
+  href={useBaseUrl('/files_per_download/2-Compliance-Gap-Procedura-Incidenti-v01.docx')}
   download
 >
   📥 Scarica il report di compliance (DOCX)
 </a>
+
