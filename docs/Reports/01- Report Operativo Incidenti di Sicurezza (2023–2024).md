@@ -46,7 +46,7 @@ Ogni sezione è supportata da visualizzazioni dedicate (grafici a linee, torte, 
 
 Il report è destinato a:
 
-- responsabili della sicurezza ICT;
+- responsabili della sicurezza ICT;a
 - team di gestione degli incidenti;
 - funzioni di governance e controllo;
 - management e direzione;
@@ -59,11 +59,12 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <a
   className="button button--primary"
-  href={useBaseUrl('/files_per_download/report-operativo-incidenti/1-Report-Operativo-Incidenti-v01.docx')}
+  href={useBaseUrl('/files_per_download/1-Report-Operativo-Incidenti-v01.docx')}
   download
 >
   📥 Scarica il report operativo (DOCX)
 </a>
 >
+
 
 
