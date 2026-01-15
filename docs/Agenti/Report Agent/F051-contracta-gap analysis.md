@@ -1,147 +1,136 @@
 ---
 id: f051-contracta-gap-analysis-dora
-title: F051 – Contracta – Gap Analysis contrattuale DORA
-sidebar_label: F051 – Contracta – Gap Analysis DORA
+title: Contracta – Sinergia ICT
+subtitle: Gap Analysis contrattuale DORA (Checklist)
+description: Analisi automatizzata dei contratti ICT dei fornitori in ottica DORA, con identificazione delle non conformità e azioni di rimedio.
+tags:
+  - dora
+  - contratti
+  - fornitori
+  - compliance
+  - gap-analysis
+sidebar_position: 51
 ---
 
 ## Descrizione generale
 
-La funzione **Contracta – Gap Analysis contrattuale DORA** è uno strumento progettato per supportare banche e assicurazioni nella verifica della conformità dei contratti ICT alle prescrizioni del Regolamento **DORA**.
+**Contracta – Sinergia ICT** è una funzionalità dedicata alla **gap analysis contrattuale** che consente di analizzare automaticamente i contratti dei fornitori ICT rispetto ai requisiti normativi **DORA**.
 
-La funzione consente di analizzare automaticamente un contratto ICT confrontandolo con una checklist strutturata di requisiti normativi, individuando in modo tracciabile eventuali lacune, parziali coperture o non conformità.
-
----
-
-## Obiettivo della funzione
-
-Contracta ha l’obiettivo di:
-- ridurre il tempo necessario per la revisione contrattuale;
-- aumentare la coerenza delle valutazioni tra team diversi;
-- supportare audit, compliance e risk management;
-- fornire indicazioni operative per la remediation contrattuale;
-- rendere il processo di gap analysis ripetibile e documentabile.
+La funzione supporta l’utente nell’individuazione delle **clausole mancanti, parzialmente rispettate o non conformi**, fornendo evidenze puntuali, livelli di confidenza e **azioni di rimedio concrete** da inserire nel contratto.
 
 ---
 
-## Interfaccia iniziale
+## Video dimostrativo
 
-All’avvio della funzione, l’utente accede alla schermata principale di **Contracta – Sinergia ICT**, dedicata alla Gap Analysis contrattuale DORA.
-
-È possibile selezionare il documento da analizzare, ad esempio un contratto di fornitura di servizi ICT.
-
-![Selezione documento e avvio Contracta](/img/f50-Gap Analysis Contratti Fornitori 1.png)
+<iframe
+  src="https://laurenticonsulting-my.sharepoint.com/personal/riccardo_laurenti_hiqsolutions_it/_layouts/15/embed.aspx?UniqueId=858907a8-2ec9-4da3-bb26-0f09af35708d&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+  width="640"
+  height="360"
+  frameborder="0"
+  scrolling="no"
+  allowfullscreen
+  title="VD10-contracta.mp4">
+</iframe>
 
 ---
 
-## Checklist DORA
+## Caricamento del documento contrattuale
 
-La funzione carica automaticamente una **checklist strutturata** in cui ogni riga rappresenta una prescrizione DORA che dovrebbe essere presente nel contratto ICT.
+L’utente seleziona il **contratto del fornitore** da analizzare (formato `.docx`) direttamente dall’interfaccia Contracta.
 
-Per ciascuna prescrizione sono visualizzate informazioni quali:
-- codice del requisito;
-- descrizione;
-- applicabilità;
-- dipendenze;
-- gravità in caso di mancanza;
-- prassi negoziali suggerite.
+![Caricamento contratto](/img/f51-Gap Analysis Contratti Fornitori 1.png)
 
-![Checklist prescrizioni DORA](/img/f50-Gap Analysis Contratti Fornitori 2.png)
+---
+
+## Anteprima della checklist DORA
+
+Prima di avviare l’analisi, è possibile visualizzare l’**anteprima della checklist DORA**, che rappresenta l’insieme dei requisiti contrattuali oggetto di verifica.
+
+![Anteprima checklist](/img/f51-Gap Analysis Contratti Fornitori 2.png)
 
 ---
 
 ## Avvio dell’analisi contrattuale
 
-Una volta selezionato il documento, l’utente può avviare l’analisi contrattuale.  
-Contracta procede requisito per requisito, mostrando l’avanzamento dell’elaborazione.
+Con un’azione esplicita, l’utente avvia il processo di **analisi automatizzata del contratto**, che viene confrontato con i requisiti normativi previsti.
 
-![Avvio analisi contrattuale](/img/f50-Gap Analysis Contratti Fornitori 3.png)
-
----
-
-## Analisi progressiva delle prescrizioni
-
-Durante l’analisi:
-- il sistema interroga l’indice documentale;
-- recupera automaticamente le evidenze testuali rilevanti dal contratto;
-- associa le evidenze a ciascuna prescrizione DORA.
-
-L’avanzamento è visibile tramite barra di progresso.
-
-![Analisi in corso](/img/f50-Gap Analysis Contratti Fornitori 4.png)
+![Avvio analisi contrattuale](/img/f51-Gap Analysis Contratti Fornitori 3.png)
 
 ---
 
-## Esito della valutazione
+## Stato di avanzamento dell’analisi
 
-Per ogni prescrizione, l’agente restituisce un **esito univoco**, scelto tra:
-- **RISPETTATA**
-- **PARZIALMENTE RISPETTATA**
-- **NON RISPETTATA**
+Durante l’elaborazione, il sistema mostra lo **stato di avanzamento**, indicando il numero di controlli completati rispetto al totale.
 
-L’esito è accompagnato da:
-- livello di confidenza;
-- evidenze testuali utilizzate per la valutazione.
-
-![Esiti di conformità](/img/f50-Gap Analysis Contratti Fornitori 5.png)
+![Analisi in corso](/img/f51-Gap Analysis Contratti Fornitori 4.png)
 
 ---
 
-## Evidenze e motivazioni
+## Risultati della gap analysis
 
-Per ogni requisito analizzato, Contracta mostra:
-- le evidenze estratte dal contratto;
-- una motivazione sintetica basata esclusivamente sul testo disponibile;
-- l’indicazione puntuale delle parti mancanti o incomplete.
+Al termine dell’analisi, viene generata una **tabella strutturata** contenente, per ciascun requisito DORA:
 
-Questo approccio garantisce trasparenza e tracciabilità del giudizio.
+- codice di riferimento
+- descrizione
+- applicabilità
+- esito di conformità
+- livello di confidenza
+- evidenze estratte dal contratto
 
-![Evidenze e motivazioni LLM](/img/f50-Gap Analysis Contratti Fornitori 6.png)
-
----
-
-## Azioni di rimedio
-
-Quando una prescrizione risulta parzialmente o non rispettata, il sistema propone **azioni di rimedio contrattuali**, utili per:
-- aggiornare o integrare le clausole;
-- supportare la negoziazione con il fornitore;
-- indirizzare attività di remediation strutturata.
-
-Le azioni sono formulate in modo operativo e concreto.
-
-![Azioni di rimedio contrattuali](/img/f50-Gap Analysis Contratti Fornitori 7.png)
+![Risultati gap analysis](/img/f51-Gap Analysis Contratti Fornitori 5.png)
 
 ---
 
-## Output e report finale
+## Evidenze e valutazione LLM
 
-Al termine dell’analisi, Contracta consente di esportare un **report strutturato in formato Excel**, contenente:
-- l’elenco completo delle prescrizioni;
-- gli esiti di conformità;
-- le evidenze;
-- i livelli di confidenza;
-- le azioni di rimedio suggerite.
+Per ogni requisito analizzato, il sistema riporta le **evidenze individuate** nel testo contrattuale, evidenziando le parti rilevanti o le assenze significative.
 
-Il report è pronto per utilizzo in ambito:
-- audit;
-- compliance;
-- risk management;
-- approvazioni interne.
-
-![Output report Excel](/img/f50-Gap Analysis Contratti Fornitori 8.png)
+![Evidenze LLM](/img/f51-Gap Analysis Contratti Fornitori 6.png)
 
 ---
 
-## Valore per l’utente
+## Azioni di rimedio suggerite
 
-La funzione **Contracta – Gap Analysis DORA** permette di:
-- trasformare la revisione contrattuale da attività manuale a processo guidato;
-- ridurre ambiguità interpretative;
-- migliorare la qualità delle decisioni;
-- accelerare il dialogo con i fornitori;
-- supportare il percorso verso la resilienza operativa digitale.
+Per i requisiti **non rispettati o parzialmente rispettati**, Contracta propone **azioni di rimedio operative**, formulate in linguaggio contrattuale pronto per l’integrazione.
+
+![Azioni di rimedio](/img/f51-Gap Analysis Contratti Fornitori 7.png)
 
 ---
 
-## Sintesi finale
+## Dettaglio delle clausole critiche
 
-Contracta rappresenta uno strumento avanzato di **AI applicata alla compliance contrattuale**, capace di rendere la Gap Analysis DORA un processo strutturato, ripetibile e documentabile, a supporto delle funzioni di governance, rischio e controllo.
+L’utente può analizzare nel dettaglio le **clausole critiche**, incluse quelle relative a:
+
+- classificazione dei servizi
+- continuità operativa
+- RPO / RTO
+- subfornitura
+- reporting e audit
+
+![Dettaglio clausole](/img/f51-Gap Analysis Contratti Fornitori 8.png)
+
+---
+
+## Output della funzione
+
+**Contracta** produce un output strutturato e utilizzabile per:
+
+- revisione contrattuale
+- negoziazione con il fornitore
+- audit interni
+- dimostrazione di conformità DORA
+
+**Formato di output:**
+- Tabella di gap analysis
+- Evidenze testuali
+- Azioni di rimedio contrattuali
+
+---
+
+## Benefici principali
+
+- Riduzione dei tempi di analisi contrattuale
+- Maggiore accuratezza nell’individuazione delle non conformità
+- Supporto concreto alla compliance DORA
+- Standardizzazione delle azioni di rimedio
+- Migliore governance dei fornitori ICT
