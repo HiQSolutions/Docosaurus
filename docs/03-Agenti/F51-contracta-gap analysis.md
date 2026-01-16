@@ -10,7 +10,6 @@ tags:
   - fornitori
   - compliance
   - gap-analysis
-sidebar_position: 51
 ---
 
 ## Descrizione generale
@@ -135,6 +134,7 @@ L’utente può analizzare nel dettaglio le **clausole critiche**, incluse quell
 - Supporto concreto alla compliance DORA
 - Standardizzazione delle azioni di rimedio
 - Migliore governance dei fornitori ICT
+
 
 
 
