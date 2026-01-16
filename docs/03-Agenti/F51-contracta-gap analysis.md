@@ -1,7 +1,7 @@
 ---
 id: f051-contracta-gap-analysis-dora
 title: F051 - Contracta – Sinergia ICT
-subtitle: Gap Analysis contrattuale DORA (Checklist)
+sidebar_label: f51-Contracta – Sinergia ICT
 description: Analisi automatizzata dei contratti ICT dei fornitori in ottica DORA, con identificazione delle non conformità e azioni di rimedio.
 tags:
   - dora
@@ -134,4 +134,5 @@ L’utente può analizzare nel dettaglio le **clausole critiche**, incluse quell
 - Supporto concreto alla compliance DORA
 - Standardizzazione delle azioni di rimedio
 - Migliore governance dei fornitori ICT
+
 
