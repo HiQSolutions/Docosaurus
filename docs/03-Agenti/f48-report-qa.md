@@ -1,7 +1,7 @@
 ---
 id: f048-gov-ict-qa-agents
 title: f48 – GOV ICT Q&A Agents
-sidebar_label: F048 – GOV ICT Q&A Agents
+sidebar_label: f48-GOV ICT Q&A Agents
 ---
 
 ## Descrizione generale
@@ -150,6 +150,7 @@ La funzione **GOV ICT Q&A Agents** permette di:
 ## Sintesi finale
 
 GOV ICT Q&A Agents rappresenta un potente strumento di **intelligenza analitica applicata alla governance ICT**, capace di trasformare dati e documenti in insight strategici, favorendo un approccio proattivo alla gestione del rischio e alla conformità normativa.
+
 
 
 
