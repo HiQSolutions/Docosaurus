@@ -1,13 +1,13 @@
 ---
 id: funzioni-f052-f059-flussi-lavoro-wfm
 title: "Funzioni F052–F059 – Flussi Lavoro (WFM)"
-sidebar_label: "F052–F059 – Flussi Lavoro"
+sidebar_label: "f52–f59 – Flussi Lavoro"
 description: "Manuale utente delle funzioni WFM (Workflow Management) per gestione attività, archivio documentale, monitoraggio e configurazione dei flussi di lavoro: F052–F059."
 ---
 
 ## Panoramica
 
-Le funzioni **F052–F059 – Flussi Lavoro (WFM)** consentono di governare il ciclo di vita operativo dei flussi documentali e delle attività correlate (creazione, approvazione, condivisione, archiviazione), assicurando tracciabilità, responsabilità e controllo dei tempi.
+Le funzioni **f52–f59 – Flussi Lavoro (WFM)** consentono di governare il ciclo di vita operativo dei flussi documentali e delle attività correlate (creazione, approvazione, condivisione, archiviazione), assicurando tracciabilità, responsabilità e controllo dei tempi.
 
 Il modulo è articolato in:
 - **Operatività utente** (attività assegnate, consultazione ed esecuzione step)
@@ -333,6 +333,7 @@ Questa configurazione è fondamentale per:
 2. Cerca e seleziona un utente
 3. Verifica o modifica ruolo e UO
 4. Salva la variazione (o aggiungi un nuovo utente con **+**)
+
 
 
 
