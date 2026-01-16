@@ -1,7 +1,11 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   manualeSidebar: [
-
+ {
+      type: "doc",
+      id: "elenco-funzioni-sinergia-ict",
+      label: "00-Elenco funzioni",
+    },
     {
       type: "category",
       label: "01-Base di conoscenza",
