@@ -1,7 +1,7 @@
 ---
 id: elenco-funzioni-sinergia-ict
 title: "Elenco Funzioni – Sinergia ICT"
-sidebar_label: "Elenco Funzioni"
+sidebar_label: "00-Elenco Funzioni"
 description: "Elenco gerarchico delle funzioni e delle analytics di Sinergia ICT, organizzato per macro-tipologia e livelli funzionali."
 ---
 
