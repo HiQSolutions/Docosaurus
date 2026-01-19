@@ -22,8 +22,8 @@
    ========================================================= */
 .homepageLayout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) var(--home-toc-width);
-  gap: var(--home-gap);
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: var(--home-gap);1rem
   align-items: start;
   width: 100%;
 }
