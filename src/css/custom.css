@@ -3,6 +3,21 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
+.homepageIndex {
+  width: 100%;
+}
+
+/* Docusaurus/Infima container spesso limita la larghezza: reset solo dentro la homepage */
+.homepageIndex .container,
+.homepageIndex .container--fluid,
+.homepageIndex .main-wrapper,
+.homepageIndex main,
+.homepageIndex article {
+  max-width: none !important;
+  width: 100% !important;
+}
+
+/* Centro il contenuto con una max width “enterprise” */
 .homepageWide {
   max-width: 1600px;
   margin: 0 auto;
