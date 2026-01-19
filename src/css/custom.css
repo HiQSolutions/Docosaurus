@@ -5,31 +5,19 @@
  */
 
 /* ============================
-   Homepage (index.mdx) - wide layout
+   Homepage wide layout
    ============================ */
 
-/* Il wrapper che hai in index.mdx: <div className="homepageWide"> */
 .homepageWide {
-  width: 100%;
-}
-
-/* Rimuove i vincoli di larghezza Docusaurus SOLO dentro la homepage */
-.homepageWide .container,
-.homepageWide .container--fluid,
-.homepageWide main,
-.homepageWide article,
-.homepageWide .markdown {
-  max-width: none !important;
-  width: 100% !important;
-}
-
-/* Imposta una larghezza massima più ampia per il contenuto vero e proprio */
-.homepageWide > * {
   max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* immagini sempre responsive */
+.homepageWide img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* You can override the default Infima variables here. */
