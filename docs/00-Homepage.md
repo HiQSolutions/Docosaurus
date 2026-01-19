@@ -1,112 +1,242 @@
 ---
 id: homepage-sinergia-ict
-title: "Home Page – SinergIA ICT-GRC"
+title: "Home Page – Sinergia ICT-GRC"
 sidebar_label: "Home Page Applicazione"
-description: "Descrizione della schermata iniziale della piattaforma SinergIA ICT-GRC e dell’articolazione funzionale delle aree applicative."
+description: "Descrizione della schermata principale della piattaforma Sinergia ICT-GRC e della struttura funzionale verticale delle funzionalità."
 ---
 
-## Introduzione alla Home Page
+## Scopo della schermata
 
-La **Home Page di SinergIA ICT-GRC** rappresenta il punto di accesso centrale alla piattaforma e fornisce una **vista sintetica ma strutturata** dell’intero perimetro funzionale della soluzione.
+La **Home Page di Sinergia ICT-GRC** rappresenta il punto di accesso centrale a tutte le funzionalità della piattaforma.  
+Da questa schermata l’utente può navigare l’intero ecosistema applicativo, organizzato secondo una **struttura funzionale verticale**, coerente con il modello **Governance, Risk & Compliance ICT** adottato dalla soluzione.
 
-La schermata è progettata per:
-- guidare l’utente nella navigazione delle funzionalità;
-- rendere immediatamente comprensibile la separazione tra **dati, processi, agenti intelligenti e configurazioni**;
-- riflettere il modello operativo ICT-GRC adottato dalla soluzione.
+Le funzionalità sono organizzate in **aree funzionali principali (funzionalità madre)**, visualizzate in blu, ciascuna delle quali si articola in **sottofunzioni** e **ulteriori livelli di dettaglio operativo**.
 
-L’organizzazione delle funzionalità segue una **struttura verticale**, suddivisa in **quattro macro-aree funzionali (funzionalità “madre”)**, evidenziate graficamente in blu.
+![Home Page Sinergia ICT](\/img\/Homepage - App-ICt.png)
 
-![Home Page SinergIA ICT](/img/Homepage - App-ICt.png)
+---
+
+## Struttura funzionale della Home Page
+
+La navigazione è costruita secondo un **albero gerarchico** che riflette:
+
+- il **modello GRC ICT**
+- la separazione tra **dati, documenti, processi e analytics**
+- il principio delle **tre linee di difesa**
+
+Ogni voce di primo livello abilita un dominio funzionale, mentre i livelli successivi consentono l’accesso alle funzioni operative e analitiche.
 
 ---
 
 ## Knowledge Base
 
-La sezione **Knowledge Base** costituisce il **fondamento informativo** della piattaforma.  
-Qui vengono gestiti e strutturati **dati e documenti** che alimentano tutti i processi di governance, risk e compliance ICT.
+La **Knowledge Base** costituisce il repository centrale delle informazioni strutturate e non strutturate della piattaforma.
 
-Questa area consente di costruire una **base di conoscenza integrata**, protetta e interrogabile, sulla quale operano sia le funzioni operative sia gli agenti intelligenti.
+### Sottofunzioni principali
 
-### Sotto-funzioni principali
+- **Documenti**
+- **Dati**
+- **Workflow**
+- **Configurazioni**
 
-- **Gestione dei Dati**  
-  Gestione delle tabelle informative (data repository), import/export di dati strutturati, allineamento con data map e data dictionary.
+### Documenti
+Gestione e consultazione della documentazione ICT e GRC.
 
-- **Acquisizione Documenti**  
-  Caricamento, classificazione e indicizzazione dei documenti (normative, policy, report, evidenze di audit).
+Sotto-sottofunzioni:
+- Document Library  
+  - consultazione documenti
+  - gestione versioni
+  - metadati documentali
+- Tipologie Documento  
+  - classificazione (interno/esterno)
+  - natura documento
+  - ente emittente
+- Associazione documenti  
+  - collegamento a controlli
+  - collegamento a rischi
+  - collegamento a normative
 
-- **KB Repository**  
-  Repository centralizzato della conoscenza aziendale, con relazioni tra documenti, dati, processi, controlli e normative.
+### Dati
+Accesso ai dati strutturati utilizzati dalla piattaforma.
 
----
+Sotto-sottofunzioni:
+- Consultazione dati
+- Filtri avanzati
+- Relazioni tra entità
+- Storico e tracciabilità
 
-## Gestione e Analisi
+### Workflow
+Gestione dei flussi operativi e approvativi.
 
-La sezione **Gestione e Analisi** raccoglie le funzionalità core di **governo operativo** dell’ICT nel contesto GRC.  
-Qui i dati e i documenti della Knowledge Base vengono trasformati in **valutazioni, controlli, analisi e decisioni**.
+Sotto-sottofunzioni:
+- Workflow documentali
+- Workflow di compliance
+- Workflow di incident management
+- Assegnazione ruoli e responsabilità
 
-È l’area che abilita il presidio continuo di rischi, compliance e governance ICT.
+### Configurazioni
+Configurazione dei modelli informativi.
 
-### Sotto-funzioni principali
-
-- **Gestione Governance**  
-  Supporto alla definizione e al monitoraggio della governance ICT, inclusi processi decisionali, policy e responsabilità.
-
-- **Gestione Rischi**  
-  Identificazione, valutazione e monitoraggio dei rischi ICT, incidenti, vulnerabilità e piani di mitigazione.
-
-- **Gestione Compliance**  
-  Mappatura normativa, controlli di conformità, gap analysis e gestione delle evidenze a supporto di audit e ispezioni.
-
----
-
-## Agents
-
-La sezione **Agents** rappresenta il livello più evoluto della piattaforma.  
-Qui operano gli **agenti intelligenti**, che sfruttano AI generativa, machine learning e knowledge representation per fornire supporto avanzato agli utenti.
-
-Gli agenti interagiscono direttamente con la base dati e documentale, generando output strutturati e contestuali.
-
-### Sotto-funzioni principali
-
-- **Agent Q&A**  
-  Interrogazione in linguaggio naturale della base di conoscenza ICT-GRC, con risposte contestualizzate e tracciabili.
-
-- **Agent Report**  
-  Generazione automatica di report regolamentari e gestionali (es. DORA, incidenti, compliance), in formato strutturato.
-
-- **Agent Gap**  
-  Analisi automatizzata dei gap di compliance e di processo rispetto a requisiti normativi e policy interne.
-
-- **Gap Analysis Contratti Fornitori**  
-  Analisi specifica delle lacune di compliance e rischio nei contratti di outsourcing e terze parti ICT.
+Sotto-sottofunzioni:
+- Albero di navigazione
+- Parametri applicativi
+- Regole di business
+- Profili utente
 
 ---
 
-## Admin
+## Governance ICT
 
-La sezione **Admin** è dedicata alla **configurazione e al governo operativo della piattaforma**.  
-Qui vengono definiti i meccanismi che regolano il funzionamento complessivo di SinergIA ICT-GRC.
+L’area **Governance ICT** supporta l’allineamento tra strategia ICT, obiettivi aziendali e requisiti normativi.
 
-È un’area tipicamente riservata a utenti con ruoli amministrativi o di governance applicativa.
+### Sottofunzioni principali
 
-### Sotto-funzioni principali
+- Policy ICT
+- Ruoli e responsabilità
+- Processi ICT
 
-- **Flussi di Lavoro**  
-  Configurazione dei workflow aziendali: stati, approvazioni, responsabilità, escalation e tracciabilità dei processi.
+### Policy ICT
+Gestione del ciclo di vita delle policy.
 
-- **Configurazioni**  
-  Gestione delle impostazioni di sistema, ruoli, permessi, parametri applicativi e personalizzazioni della piattaforma.
+Sotto-sottofunzioni:
+- Redazione policy
+- Versioning
+- Approvazione
+- Comunicazione e diffusione
+
+### Ruoli e responsabilità
+Definizione e tracciamento delle responsabilità organizzative.
+
+Sotto-sottofunzioni:
+- Mappatura RACI
+- Assegnazione ruoli
+- Segregazione delle funzioni
+
+### Processi ICT
+Catalogo dei processi governati.
+
+Sotto-sottofunzioni:
+- ICT Strategy
+- Change Management
+- Incident Management
+- BCM & DR
 
 ---
 
-## Sintesi della Struttura Funzionale
+## Risk Management ICT
 
-La Home Page di SinergIA ICT-GRC non è solo un elemento di navigazione, ma una **rappresentazione visiva del modello operativo** della soluzione:
+Area dedicata alla gestione del rischio ICT lungo l’intero ciclo di vita.
 
-- **Knowledge Base** → dati e documenti  
-- **Gestione e Analisi** → processi e controlli  
-- **Agents** → intelligenza e automazione  
-- **Admin** → configurazione e governo del sistema  
+### Sottofunzioni principali
 
-Questa articolazione consente agli utenti di comprendere immediatamente **dove operare** in funzione del proprio ruolo e delle attività da svolgere, garantendo coerenza, tracciabilità e allineamento normativo lungo l’intero ciclo ICT-GRC.
+- Rischi ICT
+- Incidenti
+- Vulnerabilità
+
+### Rischi ICT
+Gestione del registro rischi.
+
+Sotto-sottofunzioni:
+- Identificazione rischio
+- Valutazione (probabilità × impatto)
+- Indicatori KRI
+- Piani di mitigazione
+
+### Incidenti
+Gestione degli eventi ICT.
+
+Sotto-sottofunzioni:
+- Registro incidenti
+- Classificazione
+- Timeline eventi
+- Notifiche regolamentari
+
+### Vulnerabilità
+Monitoraggio delle debolezze tecniche.
+
+Sotto-sottofunzioni:
+- Vulnerability assessment
+- Prioritizzazione
+- Azioni correttive
+- Verifica remediation
+
+---
+
+## Compliance ICT
+
+Area funzionale per il presidio della conformità normativa.
+
+### Sottofunzioni principali
+
+- Normative
+- Controlli
+- Audit
+
+### Normative
+Catalogo dei riferimenti regolamentari.
+
+Sotto-sottofunzioni:
+- Normative europee (DORA, NIS2, GDPR)
+- Normative nazionali
+- Linee guida
+- Framework di riferimento
+
+### Controlli
+Gestione dei controlli di compliance.
+
+Sotto-sottofunzioni:
+- Definizione controlli
+- Mappatura requisiti
+- Evidenze
+- Stato di conformità
+
+### Audit
+Supporto alle attività ispettive.
+
+Sotto-sottofunzioni:
+- Audit interni
+- Audit esterni
+- Evidenze documentali
+- Tracciabilità rilievi
+
+---
+
+## Analytics & Reporting
+
+Sezione dedicata alla **reportistica direzionale e regolamentare**.
+
+### Sottofunzioni principali
+
+- Dashboard BI
+- Report regolamentari
+
+### Dashboard BI
+Visualizzazioni interattive dei dati.
+
+Sotto-sottofunzioni:
+- KPI ICT
+- KRI
+- Trend storici
+- Analisi comparative
+
+### Report regolamentari
+Produzione automatizzata di report.
+
+Sotto-sottofunzioni:
+- Report DORA
+- Report Banca d’Italia
+- Report Audit
+- Report per CDA e Alta Direzione
+
+---
+
+## Valore della Home Page
+
+La Home Page consente:
+
+- accesso immediato alle funzioni rilevanti per ruolo;
+- visione coerente dell’ecosistema ICT-GRC;
+- riduzione dei tempi di navigazione;
+- maggiore consapevolezza del contesto operativo e normativo.
+
+Rappresenta quindi il **punto di orchestrazione** dell’intera piattaforma Sinergia ICT-GRC.
