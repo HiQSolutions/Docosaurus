@@ -14,7 +14,7 @@ La funzione guida l’utente attraverso una sequenza ordinata di fasi, dalla map
 
 ## Schermata di riferimento
 
-![](/img/Integrazionedati.png)
+![](/img/integrazionedati.png)
 
 ## Configurazione iniziale
 
