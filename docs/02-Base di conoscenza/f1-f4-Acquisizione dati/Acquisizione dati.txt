@@ -1,0 +1,215 @@
+
+Di seguito trovi una descrizione funzionale e tecnica strutturata di tutto il codice che hai condiviso, pensata esattamente per essere usata come input per la documentazione funzionale e tecnica della Knowledge Base, nelle tre aree che hai indicato:
+Acquisizione Dati – Elaborazione Dati Input
+Acquisizione Dati – Elaborare KPI e ML
+Acquisizione Dati – Pianificare Elaborazioni Acquisizione Dati
+Scrivo in modo chiaro, professionale e riutilizzabile in documenti ufficiali (Functional Design / Technical Design).
+1. Scopo generale dell’applicazione
+L’applicazione è una pipeline ETL completa e guidata, sviluppata in Streamlit, che consente di:
+acquisire dati da file Excel/CSV
+validarli secondo un Dizionario Dati
+caricarli in tabelle di staging SQL Server
+applicare integrità referenziale (PK/FK)
+eseguire aggregazioni e analisi ML opzionali
+promuovere i dati in produzione
+gestire aggiornamenti incrementali sicuri (MERGE)
+L’obiettivo è garantire qualità del dato, coerenza strutturale e scalabilità in contesti enterprise.
+2. Architettura logica della pipeline
+La pipeline è organizzata in 7 fasi sequenziali, ciascuna controllata e validata:
+Dizionario Dati
+Caricamento e Validazione in Staging
+Integrità Referenziale
+Aggregazione Intelligente (opzionale)
+Analisi ML (opzionale)
+Caricamento in Produzione
+Aggiornamenti Incrementali
+Ogni fase può essere rieseguita senza compromettere le precedenti.
+3. Acquisizione Dati – Elaborazione Dati Input
+3.1 Fase 1 – Dizionario Dati
+Descrizione funzionale
+
+Il Dizionario Dati è il cuore della pipeline. Definisce:
+nomi delle tabelle
+colonne
+chiavi primarie (PK)
+chiavi estere (FK)
+colonne univoche
+regole di aggregazione
+algoritmi ML associati
+Cosa fa il sistema
+carica un file Excel di Dizionario Dati
+normalizza nomi di tabelle e colonne
+costruisce uno schema logico interno
+risolve automaticamente le dipendenze FK
+calcola l’ordine corretto di caricamento (topologico)
+distingue tabelle dimensione e fatto
+Output
+schema validato
+ordine di caricamento tabelle
+mappa PK/FK pronta per le fasi successive
+3.2 Fase 2 – Caricamento e Validazione in Staging
+Descrizione funzionale
+
+In questa fase i file di dati vengono caricati, controllati, puliti e salvati in tabelle di staging (stg_*).
+Validazioni automatiche
+PK: non null + unicità
+FK: non null
+deduplicazione automatica
+rimozione record non validi
+regole intelligenti basate sul tipo di dato (numerico, data, testo)
+Caratteristiche chiave
+selezione interattiva delle colonne
+maschere di validazione colonna per colonna
+preview dati validi e scartati
+inferenza automatica dei tipi SQL
+caricamento batch-safe (per dataset grandi)
+Output
+tabelle di staging pulite
+report di qualità dati
+file CSV di output (grezzo / valido / non valido)
+4. Acquisizione Dati – Pianificare Elaborazioni Acquisizione Dati
+4.1 Fase 3 – Integrità Referenziale
+Descrizione funzionale
+
+Garantisce la coerenza tra le tabelle prima della produzione.
+Passaggi
+creazione vincoli PK su staging
+controlli di pre-volo (tabelle, colonne, tipi)
+identificazione record orfani FK
+pulizia automatica record orfani
+creazione vincoli FK reali
+Gestione errori
+blocco automatico se PK duplicati o null
+evidenza record problematici
+suggerimenti operativi per la risoluzione
+Output
+staging completamente consistente
+tabelle pronte per la produzione
+4.2 Fase 6 – Caricamento in Produzione
+Descrizione funzionale
+
+Trasforma lo staging in database di produzione.
+Cosa fa
+crea le tabelle finali se non esistono
+applica PK, FK e UNIQUE
+carica prima le dimensioni, poi i fatti
+evita duplicati usando NOT EXISTS
+valida il conteggio finale dei record
+Output
+database di produzione coerente
+dati certificati e pronti per BI/Analytics
+4.3 Fase 7 – Aggiornamenti Incrementali
+Descrizione funzionale
+
+Gestisce aggiornamenti continui senza compromettere i dati esistenti.
+Logica MERGE sicura
+inserisce solo nuovi record
+non aggiorna mai le FK
+protegge colonne NOT NULL
+deduplica PK in staging
+pulisce FK orfane prima del merge
+Risultato
+upsert incrementale affidabile
+zero perdita di integrità
+idempotenza del processo
+5. Acquisizione Dati – Elaborare KPI e ML
+5.1 Fase 4 – Aggregazione Intelligente
+Descrizione funzionale
+
+Le aggregazioni sono definite direttamente nel Dizionario Dati.
+Supporta
+SUM
+AVG / MEAN
+aggregazioni multiple per tabella
+gruppi di aggregazione numerati
+Output
+dataset aggregati
+download CSV
+preview immediata
+5.2 Fase 5 – Analisi ML
+Descrizione funzionale
+
+Modulo ML esplorativo per analisi avanzate sui dati di staging.
+Algoritmi supportati
+Rilevamento anomalie (Isolation Forest)
+Clustering (KMeans)
+Previsione temporale (Random Forest)
+Caratteristiche
+selezione dinamica delle colonne
+scaling automatico
+risultati interpretabili
+output esportabili
+Scopo
+supporto a KPI avanzati
+data quality analytics
+insight predittivi preliminari
+6. Aspetti tecnici rilevanti
+Tecnologie: Streamlit, Pandas, Polars, SQLAlchemy, SQL Server, Scikit-learn
+Sicurezza: protezione FK in merge, timeout DB, batch insert
+Scalabilità: gestione file >100k righe, insert a blocchi
+Manutenibilità: pipeline modulare, fasi indipendenti
+Robustezza: controlli ridondanti su PK/FK in ogni fase critica
+7. Conclusione per documentazione
+Questa soluzione rappresenta una pipeline ETL enterprise-grade, completamente governata da Dizionario Dati, con:
+qualità del dato garantita
+integrità referenziale rigorosa
+supporto a analytics e ML
+gestione incrementale sicura
+Knowledge Base → Acquisizione Dati → Acquisizione Dati CMDB
+Il testo è funzionale + tecnico, chiaro, riutilizzabile e adatto come input strutturato per ChatGPT o documentazione interna.
+CMDB Data Transformer – Descrizione Dettagliata
+Knowledge Base: Acquisizione Dati → Acquisizione Dati CMDB
+1. Obiettivo del componente
+Il CMDB Data Transformer è un’applicazione basata su Streamlit progettata per acquisire, validare, trasformare e caricare dati CMDB forniti in formato Excel all’interno di un database relazionale.
+Lo scopo principale è standardizzare esportazioni CMDB eterogenee e convertirle in tabelle di inventario strutturate, separate in:
+Inventario Applicativo
+Inventario Infrastrutturale
+I dati risultanti possono essere consultati, esportati e caricati su database per analisi, reporting e integrazione con sistemi enterprise.
+2. Requisiti dei dati di input
+2.1 Formato supportato
+L’applicazione accetta file Excel (.xlsx / .xls) che devono contenere obbligatoriamente tre fogli CMDB:
+Foglio	Descrizione
+CMDB_Asset	Elenco principale degli elementi di configurazione CMDB
+CMDB_Relationship	Relazioni tra gli asset CMDB
+CMDB_Change_Log	Storico delle modifiche e metadati di ciclo di vita
+Se uno o più fogli richiesti non sono presenti, il processo di acquisizione viene interrotto.
+3. Modello dati di output
+Il processo di trasformazione genera due dataset canonici:
+3.1 Inventario Applicativo (CMDB_01_App)
+Contiene entità logiche e applicative derivate dai dati CMDB, tra cui:
+applicazioni e servizi
+metadati e ownership
+relazioni applicative risolte
+attributi consolidati provenienti da più sorgenti CMDB
+3.2 Inventario Infrastrutturale (CMDB_02_Infra)
+Contiene entità tecniche e infrastrutturali, tra cui:
+server, host e componenti
+dipendenze infrastrutturali
+relazioni tecniche risolte
+Entrambi i dataset sono normalizzati, appiattiti e ottimizzati per l’archiviazione su database.
+4. Architettura logica
+La soluzione è strutturata in tre livelli principali:
+4.1 Livello di Presentazione (Streamlit)
+interfaccia a schede (tab)
+configurazione guidata tramite sidebar
+gestione dello stato di sessione
+anteprima e download dei dati
+indicatori di avanzamento per operazioni lunghe
+4.2 Livello di Elaborazione
+Gestito dal modulo CMDBDataProcessor, responsabile di:
+parsing degli asset CMDB
+risoluzione delle relazioni tra elementi
+arricchimento tramite change log
+separazione dei dati in dominio applicativo e infrastrutturale
+La logica di trasformazione è completamente separata dall’interfaccia utente.
+4.3 Livello Database
+Gestito dal modulo DatabaseHandler, che si occupa di:
+connessione al database
+test di connettività
+caricamento dei DataFrame come tabelle
+gestione delle modalità di caricamento (append o replace)
+Database supportati:
+SQL Server
+PostgreSQL
+MySQL 
+ 
