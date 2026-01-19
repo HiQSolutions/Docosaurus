@@ -3,6 +3,11 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
+.homepageWide {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
 
 /* You can override the default Infima variables here. */
 :root {
