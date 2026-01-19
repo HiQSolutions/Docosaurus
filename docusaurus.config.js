@@ -100,7 +100,7 @@ plugins: [
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'My Site',
+        title: 'Homepage manuale',
         logo: {
           alt: 'My Site Logo',
           src: 'img/hiqLogo.svg',
