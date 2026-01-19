@@ -1,26 +1,26 @@
-/* ================================
-   HOMEPAGE (solo pagina /)
-   ================================ */
-
-/* Reset larghezze Infima SOLO in homepage */
-.homepageIndex .main-wrapper,
-.homepageIndex main,
-.homepageIndex .container,
-.homepageIndex .container--fluid {
-  max-width: none !important;
-  width: 100% !important;
-}
-
-/* Variabili layout */
+/* =========================================================
+   HOME – VARIABILI GLOBALI
+   ========================================================= */
 :root {
-  --home-max-width: 1400px;
-  --home-padding-x: 2rem;
-  --home-toc-width: 320px;
-  --home-gap: 2rem;
+  --home-max-width: 1400px;   /* larghezza contenuto centrale */
+  --home-padding-x: 2rem;     /* padding laterale contenuto */
+  --home-toc-width: 300px;    /* larghezza TOC */
+  --home-gap: 1rem;           /* distanza contenuto ↔ TOC */
 }
 
-/* Grid a 2 colonne (contenuto + TOC) */
-.homepageIndex .homepageLayout {
+/* =========================================================
+   HOMEPAGE: rimuove il limite di larghezza Docusaurus
+   ========================================================= */
+.homepageIndex .container {
+  max-width: none !important;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* =========================================================
+   LAYOUT A DUE COLONNE (contenuto + TOC)
+   ========================================================= */
+.homepageLayout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) var(--home-toc-width);
   gap: var(--home-gap);
@@ -28,87 +28,63 @@
   width: 100%;
 }
 
-/* Wrapper contenuto: fondamentale per evitare “sfondamenti” in grid */
-.homepageIndex .homepageContent {
-  min-width: 0;
-}
-
-/* Contenuto centrato */
-.homepageIndex .homepageWide {
+/* =========================================================
+   CONTENUTO PRINCIPALE
+   ========================================================= */
+.homepageWide {
   max-width: var(--home-max-width);
   margin: 0 auto;
-  padding-left: var(--home-padding-x);
-  padding-right: var(--home-padding-x);
-
-  /* IMPORTANTISSIMO */
-  min-width: 0;
-}
-
-/* FAIL-SAFE: evita che il testo finisca sotto al TOC anche se qualcosa sfonda */
-@media (min-width: 1101px) {
-  .homepageIndex .homepageWide {
-    padding-right: calc(var(--home-padding-x) + var(--home-toc-width) + var(--home-gap));
-  }
+  padding: 0 var(--home-padding-x);
+  min-width: 0; /* IMPORTANTISSIMO: evita overflow verso il TOC */
 }
 
 /* Immagini responsive */
-.homepageIndex .homepageWide img {
+.homepageWide img {
   max-width: 100%;
   height: auto;
 }
 
-/* Tabelle = causa #1 degli overflow */
-.homepageIndex .homepageWide table {
+/* Tabelle scrollabili (RACI ecc.) */
+.homepageWide table {
   display: block;
+  overflow-x: auto;
   width: 100%;
-  overflow-x: auto;
 }
 
-/* Code/inline code/URL lunghi */
-.homepageIndex .homepageWide pre,
-.homepageIndex .homepageWide code {
-  max-width: 100%;
-  overflow-x: auto;
-}
-
-/* TOC sticky a destra */
-.homepageIndex .homepageToc {
+/* =========================================================
+   TOC (barra destra)
+   ========================================================= */
+.homepageToc {
   position: sticky;
   top: calc(var(--ifm-navbar-height) + 1rem);
-  max-height: calc(100vh - var(--ifm-navbar-height) - 2rem);
-  overflow: auto;
-  z-index: 2;
+  height: calc(100vh - var(--ifm-navbar-height) - 2rem);
+  overflow-y: auto;
 }
 
-.homepageIndex .homepageTocInner {
-  padding: 0.75rem 1rem;
+.homepageTocInner {
+  padding-left: 1rem;
   border-left: 1px solid var(--ifm-toc-border-color, #e5e7eb);
 }
 
-.homepageIndex .homepageTocTitle {
+.homepageTocTitle {
   font-weight: 600;
+  font-size: 0.9rem;
   margin-bottom: 0.75rem;
 }
 
-/* Responsive: sotto 1100px il TOC va sotto */
-@media (max-width: 1100px) {
-  .homepageIndex .homepageLayout {
+/* =========================================================
+   RESPONSIVE – mobile / tablet
+   ========================================================= */
+@media (max-width: 996px) {
+  .homepageLayout {
     grid-template-columns: 1fr;
   }
 
-  .homepageIndex .homepageWide {
-    padding-right: var(--home-padding-x);
+  .homepageToc {
+    display: none;
   }
 
-  .homepageIndex .homepageToc {
-    position: static;
-    max-height: none;
-    overflow: visible;
-  }
-
-  .homepageIndex .homepageTocInner {
-    border-left: none;
-    border-top: 1px solid var(--ifm-toc-border-color, #e5e7eb);
-    margin-top: 1.5rem;
+  .homepageWide {
+    padding: 0 1.25rem;
   }
 }
