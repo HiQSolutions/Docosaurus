@@ -2,7 +2,7 @@
    HOMEPAGE (solo pagina /)
    ================================ */
 
-/* 1) Reset delle width imposte da Infima SOLO nella homepage */
+/* Reset larghezze Infima SOLO in homepage */
 .homepageIndex .main-wrapper,
 .homepageIndex main,
 .homepageIndex .container,
@@ -11,84 +11,102 @@
   width: 100% !important;
 }
 
-/* 2) Variabili utili (modifica qui per regolare margini e larghezza) */
+/* Variabili layout */
 :root {
-  --home-max-width: 1400px;   /* larghezza massima contenuto */
-  --home-padding-x: 2rem;     /* margine sinistro/destro */
-  --home-toc-width: 300px;    /* larghezza colonna TOC */
-  --home-gap: 2rem;           /* spazio tra contenuto e TOC */
+  --home-max-width: 1400px;
+  --home-padding-x: 2rem;
+  --home-toc-width: 320px;
+  --home-gap: 2rem;
 }
 
-/* 3) Layout a due colonne: contenuto + TOC */
-.homepageLayout {
+/* Grid a 2 colonne (contenuto + TOC) */
+.homepageIndex .homepageLayout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) var(--home-toc-width);
   gap: var(--home-gap);
   align-items: start;
-
-  /* IMPORTANTISSIMO: evita overflow e sovrapposizioni in grid */
   width: 100%;
 }
 
-/* 4) Contenuto principale centrato ma “enterprise” */
-.homepageWide {
-  max-width: var(--home-max-width);
-  margin: 0 auto;
-  padding: 0 var(--home-padding-x);
-
-  /* IMPORTANTISSIMO: permette al contenuto di restringersi senza “spingere” il TOC */
+/* Wrapper contenuto: fondamentale per evitare “sfondamenti” in grid */
+.homepageIndex .homepageContent {
   min-width: 0;
 }
 
-/* Immagini responsive dentro la homepage */
-.homepageWide img {
+/* Contenuto centrato */
+.homepageIndex .homepageWide {
+  max-width: var(--home-max-width);
+  margin: 0 auto;
+  padding-left: var(--home-padding-x);
+  padding-right: var(--home-padding-x);
+
+  /* IMPORTANTISSIMO */
+  min-width: 0;
+}
+
+/* FAIL-SAFE: evita che il testo finisca sotto al TOC anche se qualcosa sfonda */
+@media (min-width: 1101px) {
+  .homepageIndex .homepageWide {
+    padding-right: calc(var(--home-padding-x) + var(--home-toc-width) + var(--home-gap));
+  }
+}
+
+/* Immagini responsive */
+.homepageIndex .homepageWide img {
   max-width: 100%;
   height: auto;
 }
 
-/* Tabelle: spesso sono loro a causare “sovrapposizioni” (overflow) */
-.homepageWide table {
+/* Tabelle = causa #1 degli overflow */
+.homepageIndex .homepageWide table {
   display: block;
-  overflow-x: auto;
   width: 100%;
+  overflow-x: auto;
 }
 
-/* 5) TOC a destra: sticky + scroll interno */
-.homepageToc {
+/* Code/inline code/URL lunghi */
+.homepageIndex .homepageWide pre,
+.homepageIndex .homepageWide code {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* TOC sticky a destra */
+.homepageIndex .homepageToc {
   position: sticky;
   top: calc(var(--ifm-navbar-height) + 1rem);
   max-height: calc(100vh - var(--ifm-navbar-height) - 2rem);
   overflow: auto;
-
-  /* evita che il TOC finisca sotto altri elementi */
-  z-index: 1;
+  z-index: 2;
 }
 
-/* Bordo e padding interno TOC */
-.homepageTocInner {
+.homepageIndex .homepageTocInner {
   padding: 0.75rem 1rem;
   border-left: 1px solid var(--ifm-toc-border-color, #e5e7eb);
 }
 
-.homepageTocTitle {
+.homepageIndex .homepageTocTitle {
   font-weight: 600;
   margin-bottom: 0.75rem;
 }
 
-/* 6) Responsive: su schermi piccoli il TOC va sotto (o puoi nasconderlo) */
+/* Responsive: sotto 1100px il TOC va sotto */
 @media (max-width: 1100px) {
-  .homepageLayout {
+  .homepageIndex .homepageLayout {
     grid-template-columns: 1fr;
   }
 
-  .homepageToc {
+  .homepageIndex .homepageWide {
+    padding-right: var(--home-padding-x);
+  }
+
+  .homepageIndex .homepageToc {
     position: static;
     max-height: none;
     overflow: visible;
-    border-left: none;
   }
 
-  .homepageTocInner {
+  .homepageIndex .homepageTocInner {
     border-left: none;
     border-top: 1px solid var(--ifm-toc-border-color, #e5e7eb);
     margin-top: 1.5rem;
