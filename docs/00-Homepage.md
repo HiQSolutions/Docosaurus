@@ -12,7 +12,7 @@ Da questa schermata l’utente può navigare l’intero ecosistema applicativo, 
 
 Le funzionalità sono organizzate in **aree funzionali principali (funzionalità madre)**, visualizzate in blu, ciascuna delle quali si articola in **sottofunzioni** e **ulteriori livelli di dettaglio operativo**.
 
-![Home Page Sinergia ICT](\/img\/Homepage - App-ICt.png)
+![](/img/Homepage - App-ICt.png)
 
 ---
 
@@ -240,4 +240,5 @@ La Home Page consente:
 - maggiore consapevolezza del contesto operativo e normativo.
 
 Rappresenta quindi il **punto di orchestrazione** dell’intera piattaforma Sinergia ICT-GRC.
+
 
