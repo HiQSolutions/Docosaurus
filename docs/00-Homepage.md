@@ -1,7 +1,7 @@
 ---
 id: homepage-sinergia-ict
 title: "Home Page – Sinergia ICT-GRC"
-sidebar_label: "Home Page Applicazione"
+sidebar_label: "00-Menù applicazione"
 description: "Descrizione della schermata principale della piattaforma Sinergia ICT-GRC e della struttura funzionale verticale delle funzionalità."
 ---
 
@@ -240,3 +240,4 @@ La Home Page consente:
 - maggiore consapevolezza del contesto operativo e normativo.
 
 Rappresenta quindi il **punto di orchestrazione** dell’intera piattaforma Sinergia ICT-GRC.
+
