@@ -33,7 +33,7 @@
    ========================================================= */
 .homepageWide {
   max-width: var(--home-max-width);
-  margin: 0 auto;
+  margin: 0 ;
   padding: 0 var(--home-padding-x);
   min-width: 0; /* IMPORTANTISSIMO: evita overflow verso il TOC */
 }
