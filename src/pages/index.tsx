@@ -6,16 +6,18 @@ import HomeContent, { toc as homeToc } from "./home.mdx";
 export default function Home() {
   return (
     <Layout wrapperClassName="homepageIndex">
-      <main className="container--fluid padding-vert--lg">
+      <main className="container container--fluid padding-vert--lg">
         <div className="homepageLayout">
-          <div className="homepageWide">
-            <HomeContent />
+          <div className="homepageContent">
+            <div className="homepageWide">
+              <HomeContent />
+            </div>
           </div>
 
-          <aside className="homepageToc" role="complementary" aria-label="Contenuti della pagina">
+          <aside className="homepageToc" aria-label="Contenuti della pagina">
             <div className="homepageTocInner">
               <div className="homepageTocTitle">Contenuti della pagina</div>
-              <TOC key="home-toc" toc={homeToc} />
+              <TOC toc={homeToc} />
             </div>
           </aside>
         </div>
