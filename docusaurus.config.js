@@ -100,7 +100,7 @@ plugins: [
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'Homepage manuale',
+        title: 'Home',
         logo: {
           alt: 'My Site Logo',
           src: 'img/hiqLogo.svg',
@@ -112,7 +112,7 @@ plugins: [
             position: 'left',
             label: 'Manuale',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+         
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
