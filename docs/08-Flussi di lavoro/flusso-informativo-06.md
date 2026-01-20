@@ -1,7 +1,7 @@
 ---
 id: flusso-informativo-06
 title: Gestione dei Fornitori ICT
-sidebar_label:Fornitori ICT
+sidebar_label: Fornitori ICT
 description: Descrizione del flusso informativo di Gestione dei Fornitori ICT, comprensivo dei flussi di lavoro, dei documenti prodotti e degli step operativi associati.
 tags:
   - vendor management
@@ -126,4 +126,5 @@ L’esecuzione del flusso informativo **ID_FLINFO_06** produce:
 - evidenze documentali per audit e decisioni strategiche.
 
 ---
+
 
