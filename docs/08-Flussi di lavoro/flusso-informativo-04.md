@@ -1,7 +1,7 @@
 ---
 id: flusso-informativo-04
 title: Gestione della Continuità Operativa ICT
-sidebar_label: Flusso Informativo 04 – Continuità Operativa ICT
+sidebar_label: Continuità Operativa ICT
 description: Descrizione del flusso informativo di Gestione della Continuità Operativa ICT, comprensivo dei flussi di lavoro, dei documenti prodotti e degli step operativi associati.
 tags:
   - business continuity
@@ -126,3 +126,4 @@ L’esecuzione del flusso informativo **ID_FLINFO_04** produce:
 - supporto ai processi di audit, resilienza e gestione delle emergenze.
 
 ---
+
