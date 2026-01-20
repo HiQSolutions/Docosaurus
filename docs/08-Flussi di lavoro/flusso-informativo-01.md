@@ -1,7 +1,7 @@
 ---
 id: flusso-informativo-01
 title: Governance e Sicurezza ICT
-sidebar_label: Flusso Informativo 01 – Governance e Sicurezza ICT
+sidebar_label:Governance e Sicurezza ICT
 description: Descrizione del flusso informativo di Governance e Sicurezza ICT, comprensivo dei flussi di lavoro, dei documenti prodotti e degli step operativi associati.
 tags:
   - governance
@@ -116,3 +116,4 @@ L’esecuzione completa del flusso informativo **ID_FLINFO_01** produce:
 - supporto ai processi di controllo, audit e compliance.
 
 ---
+
