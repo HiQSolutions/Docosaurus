@@ -1,7 +1,7 @@
 ---
 id: flusso-informativo-05
 title: Gestione delle Modifiche ICT
-sidebar_label: Flusso Informativo 05 – Change Management ICT
+sidebar_label: Change Management ICT
 description: Descrizione del flusso informativo di Gestione delle Modifiche ICT, comprensivo dei flussi di lavoro, dei documenti prodotti e degli step operativi associati.
 tags:
   - change management
@@ -126,3 +126,4 @@ L’esecuzione del flusso informativo **ID_FLINFO_05** produce:
 - evidenze documentali per audit e miglioramento continuo.
 
 ---
+
