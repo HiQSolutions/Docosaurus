@@ -16,7 +16,7 @@ La schermata è progettata per:
 
 L’organizzazione delle funzionalità segue una **struttura verticale**, suddivisa in **quattro macro-aree funzionali (funzionalità “madre”)**, evidenziate graficamente in blu.
 
-![Home Page SinergIA ICT](/img/Homepage - App-ICt.png)
+![](/img/Homepage - App-ICt.png)
 
 ---
 
@@ -110,3 +110,4 @@ La Home Page di SinergIA ICT-GRC non è solo un elemento di navigazione, ma una 
 - **Admin** → configurazione e governo del sistema  
 
 Questa articolazione consente agli utenti di comprendere immediatamente **dove operare** in funzione del proprio ruolo e delle attività da svolgere, garantendo coerenza, tracciabilità e allineamento normativo lungo l’intero ciclo ICT-GRC.
+
