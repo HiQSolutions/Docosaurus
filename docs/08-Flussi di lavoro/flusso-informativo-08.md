@@ -1,7 +1,7 @@
 ---
 id: flusso-informativo-08
 title: Compliance e Audit ICT
-sidebar_label: Flusso Informativo 08 – Compliance e Audit ICT
+sidebar_label: Compliance e Audit ICT
 description: Descrizione del flusso informativo di Compliance e Audit ICT, comprensivo dei flussi di lavoro, dei documenti prodotti e degli step operativi associati.
 tags:
   - compliance
@@ -126,3 +126,4 @@ L’esecuzione del flusso informativo **ID_FLINFO_08** produce:
 - supporto ai processi di controllo, governance e miglioramento continuo.
 
 ---
+
