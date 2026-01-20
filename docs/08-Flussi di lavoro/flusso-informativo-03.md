@@ -1,7 +1,7 @@
 ---
 id: flusso-informativo-03
 title: Gestione degli Incidenti ICT
-sidebar_label: Flusso Informativo 03 – Incidenti ICT
+sidebar_label: Incidenti ICT
 description: Descrizione del flusso informativo di Gestione degli Incidenti ICT, comprensivo dei flussi di lavoro, dei documenti prodotti e degli step operativi associati.
 tags:
   - incident management
@@ -126,3 +126,4 @@ L’esecuzione del flusso informativo **ID_FLINFO_03** produce:
 - evidenze utili per audit, miglioramento continuo e gestione dei rischi.
 
 ---
+
