@@ -1,7 +1,7 @@
 ---
 id: flusso-informativo-07
 title: Gestione delle Performance ICT
-sidebar_label: Flusso Informativo 07 – Performance ICT
+sidebar_label: Performance ICT
 description: Descrizione del flusso informativo di Gestione delle Performance ICT, comprensivo dei flussi di lavoro, dei documenti prodotti e degli step operativi associati.
 tags:
   - performance management
@@ -126,3 +126,4 @@ L’esecuzione del flusso informativo **ID_FLINFO_07** produce:
 - evidenze documentali per governance e miglioramento continuo.
 
 ---
+
