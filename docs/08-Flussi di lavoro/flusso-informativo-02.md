@@ -1,7 +1,7 @@
 ---
 id: flusso-informativo-02
 title: Gestione dei Rischi ICT
-sidebar_label: Flusso Informativo 02 – Gestione Rischi ICT
+sidebar_label: Gestione Rischi ICT
 description: Descrizione del flusso informativo di Gestione dei Rischi ICT, comprensivo dei flussi di lavoro, dei documenti prodotti e degli step operativi associati.
 tags:
   - risk management
@@ -126,3 +126,4 @@ L’esecuzione del flusso informativo **ID_FLINFO_02** produce:
 - supporto ai processi di audit, controllo e compliance.
 
 ---
+
