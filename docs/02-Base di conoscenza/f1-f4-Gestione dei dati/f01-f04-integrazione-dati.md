@@ -1,125 +1,183 @@
 ---
-id: f01-f04-integrazione-dati-pipeline-etl
-title: "F01–F04 – Integrazione Dati (Pipeline ETL)"
-sidebar_label: "Integrazione Dati"
-description: "Modulo per l’integrazione, validazione e consolidamento dei dati ICT tramite pipeline ETL strutturata, a supporto delle funzioni di Governance, Risk e Compliance."
+id: f009
+title: F009 – Gestione Dati (Import / Export)
+description: Manuale operativo della funzione Gestione Dati per l’importazione e l’esportazione dei dati tramite pipeline ETL e database SQL
+sidebar_label: f1-4 – Gestione Dati
 ---
 
-## Panoramica del modulo
+## 1. Scopo della Funzione
 
-Il modulo **Integrazione Dati** consente di governare l’intero ciclo di caricamento, validazione e consolidamento dei dati all’interno della piattaforma **Sinergia ICT-GRC**, attraverso una pipeline ETL strutturata e guidata.
+Le funzioni **f1-f4 – Gestione Dati** consente di governare l’intero ciclo di **importazione ed esportazione dei dati** all’interno della piattaforma **Sinergia ICT**, garantendo:
 
-La pipeline è articolata in **fasi sequenziali**, ciascuna con uno scopo specifico, che accompagnano l’utente dal caricamento del dizionario dati fino alla produzione del dataset finale pronto per analisi, reporting e controlli GRC.
+- tracciabilità dei flussi informativi  
+- coerenza strutturale dei dati  
+- integrità referenziale  
+- supporto a processi analitici e di reporting  
 
-![](/img/integrazionedati.png)
+La funzione è articolata in **due sotto-funzioni principali**, accessibili dal menu laterale:
+
+- **Import** – Integrazione dati nel database
+- **Export** – Estrazione controllata dei dati dal database
 
 ---
 
-# F01 – Dizionario Dati
+## 2. Accesso e Navigazione
 
-## Scopo della funzione
+L’utente accede alla funzione dal menu principale **Gestione Dati**, che presenta due azioni disponibili:
 
-La funzione **F01 – Dizionario Dati** consente di caricare e mappare il **dizionario dati** che descrive la struttura informativa di riferimento per l’integrazione nel database SQL.
+- **Import**
+- **Export**
 
-Questa fase definisce il **significato semantico**, la struttura logica e le relazioni attese tra i dati che verranno successivamente caricati.
+### Vista generale della funzione
 
-## Descrizione dettagliata
+![Gestione Dati – Import / Export](/img/f1-4-navigazione.png)
+
+Da questa vista è possibile:
+- selezionare la funzione desiderata
+- tornare al menu principale
+- operare in modo guidato sui flussi dati
+
+---
+
+## 3. Funzione Import – Integrazione Dati
+
+La funzione **Import** consente di caricare dati strutturati nel sistema attraverso una **pipeline ETL controllata**, basata su database SQL.
+
+![Importazione Dati – Pipeline ETL](/img/f1-4-import.png)
+
+### 3.1 Configurazione Database
+
+Prima di avviare l’importazione, l’utente deve configurare la connessione al database:
+
+- **Server**
+- **Database**
+- **Utente**
+- **Password**
+- **Dizionario Dati associato**
+
+È disponibile il pulsante **“Testa Connessione”** per verificare la correttezza dei parametri.
+
+---
+
+### 3.2 Pipeline di Importazione
+
+L’importazione segue una pipeline strutturata in **7 fasi sequenziali**:
+
+1. **Dizionario Dati**  
+   Caricamento del file Excel contenente la definizione semantica e strutturale dei dati.
+
+2. **Caricamento in Staging**  
+   Inserimento temporaneo dei dati per controlli preliminari.
+
+3. **Integrità Referenziale**  
+   Verifica delle relazioni tra entità (chiavi, dipendenze, vincoli).
+
+4. **Aggregazione Intelligente**  
+   Applicazione di regole di consolidamento e normalizzazione.
+
+5. **Analisi ML (opzionale)**  
+   Applicazione di modelli di analisi o classificazione sui dati.
+
+6. **Caricamento in Produzione**  
+   Inserimento definitivo nel database operativo.
+
+7. **Aggiornamenti Incrementali**  
+   Gestione degli aggiornamenti successivi senza reinserimento completo.
+
+---
+
+### 3.3 Caricamento Dizionario Dati
+
+Il sistema supporta:
+- **Drag & Drop**
+- selezione manuale file
+
+Formati supportati:
+- `.XLS`
+- `.XLSX`
+
+Limite massimo: **200 MB per file**
+
+---
+
+### 3.4 Funzionalità Opzionali
+
+- **Abilita Aggregazione**  
+  Permette di attivare logiche avanzate di sintesi dati durante l’import.
+
+---
+
+## 4. Funzione Export – Esportazione Tabelle SQL
+
+La funzione **Export** consente di estrarre dati dal database in modo controllato e tracciato.
+
+![Esportazione Tabelle SQL](/img/f1-4-export.png)
+
+---
+
+### 4.1 Configurazione Connessione
+
+La configurazione del database avviene tramite la barra laterale e include:
+
+- Server SQL
+- Database di origine
+- Utente
+- Dizionario Dati associato
+
+L’esportazione è consentita **solo dopo connessione valida**.
+
+---
+
+### 4.2 Selezione Tabelle
 
 L’utente può:
-- selezionare il **database di destinazione**;
-- caricare un file Excel contenente il dizionario dati;
-- avviare il processo di mappatura iniziale.
+- visualizzare le tabelle disponibili
+- selezionare una o più tabelle
+- definire l’ambito di esportazione
 
-Il dizionario dati rappresenta la base di coerenza dell’intera pipeline, poiché garantisce che i dati caricati siano interpretati correttamente e utilizzabili nei processi di Governance, Risk e Compliance.
-
-## Come operare
-
-1. Selezionare il database di riferimento
-2. Caricare il file Excel del dizionario dati
-3. Avviare la fase di mappatura
+Il sistema segnala eventuali errori di configurazione o assenza di connessione.
 
 ---
 
-# F02 – Caricamento in Staging
+### 4.3 Modalità di Esportazione
 
-## Scopo della funzione
+- **Formato di output**: CSV
+- **Download diretto**
+- **Registro Attività** per tracciamento operazioni
 
-La funzione **F02 – Caricamento in Staging** consente di caricare i dati grezzi all’interno dell’area di **staging**, separata dal database di produzione.
-
-Questa fase permette di eseguire controlli preliminari prima dell’integrazione definitiva.
-
-## Descrizione dettagliata
-
-Durante il caricamento in staging:
-- i dati vengono acquisiti secondo la struttura definita dal dizionario;
-- vengono eseguiti controlli di formato e coerenza di base;
-- i dati restano isolati dall’ambiente produttivo.
-
-Questa separazione riduce il rischio operativo e consente di intercettare anomalie prima che impattino le analisi e la reportistica.
-
-## Come operare
-
-1. Avanzare alla fase **Caricamento in Staging**
-2. Avviare il caricamento dei dati sorgente
-3. Verificare l’esito del caricamento preliminare
+Ogni operazione di export viene registrata per finalità di audit e controllo.
 
 ---
 
-# F03 – Integrità Referenziale
+## 5. Sicurezza e Controlli
 
-## Scopo della funzione
+Le funzioni f1-f4 garantiscono:
 
-La funzione **F03 – Integrità Referenziale** verifica la **coerenza logica e relazionale** dei dati caricati in staging.
-
-Questa fase assicura che le relazioni tra entità, chiavi e domini siano rispettate.
-
-## Descrizione dettagliata
-
-Il sistema esegue controlli automatici su:
-- relazioni tra tabelle;
-- chiavi primarie e chiavi esterne;
-- coerenza dei valori di riferimento;
-- completezza dei campi obbligatori.
-
-Eventuali anomalie vengono evidenziate, consentendo all’utente di intervenire prima del consolidamento finale.
-
-## Come operare
-
-1. Avviare la verifica di integrità referenziale
-2. Analizzare eventuali segnalazioni di errore
-3. Correggere i dati sorgente, se necessario
+- separazione tra ambienti (staging / produzione)
+- controllo accessi per utente
+- tracciabilità delle operazioni
+- coerenza con il Dizionario Dati ufficiale
 
 ---
 
-# F04 – Aggregazione Intelligente
+## 6. Benefici Operativi
 
-## Scopo della funzione
-
-La funzione **F04 – Aggregazione Intelligente** consente di consolidare e arricchire i dati validati, rendendoli pronti per l’analisi e la reportistica GRC.
-
-Questa fase rappresenta il passaggio dal dato operativo al **dato informativo**.
-
-## Descrizione dettagliata
-
-Durante l’aggregazione:
-- i dati vengono normalizzati e consolidati;
-- vengono calcolate metriche e indicatori;
-- il dataset finale viene preparato per le successive fasi di analisi avanzata e reporting.
-
-I dati aggregati alimentano dashboard, analisi di rischio, indicatori di compliance e report regolamentari.
-
-## Come operare
-
-1. Avviare la fase di aggregazione intelligente
-2. Attendere il completamento dell’elaborazione
-3. Procedere con le fasi successive (analisi ML, produzione, aggiornamenti)
+- riduzione errori di caricamento
+- standardizzazione dei flussi dati
+- supporto a reporting e analytics
+- integrazione strutturata con sistemi esterni
 
 ---
 
-## Risultato per l’utente
+## 7. Riepilogo Funzionalità
 
-L’utilizzo delle funzioni **F01–F04 – Integrazione Dati** consente di:
-- garantire qualità e coerenza dei dati ICT;
-- ridurre errori nelle analisi GRC;
-- supportare decisioni basate su informazioni affidabili;
-- alimentare in modo strutturato dashboard e report regolamentari.
+| Sotto-funzione | Descrizione |
+|---------------|-------------|
+| Import | Integrazione dati tramite pipeline ETL guidata |
+| Export | Estrazione controllata di tabelle SQL in CSV |
+| Dizionario Dati | Governo semantico e strutturale dei dati |
+| Tracciabilità | Registro attività per audit |
+
+---
+
+**Fine Manuale – Funzione F009**
